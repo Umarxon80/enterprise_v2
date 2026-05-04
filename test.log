@@ -1,0 +1,74 @@
+[127.0.0.1]:58058 status:200 - GET reqId: 5vm1RMdPhYli_HpAY-ZAvZRZjcx_XDZWhFOqrt-OuYE, time:           0s
+2026/05/04 16:52:04.080266 main.go:81: [Fatal] failed to listen: failed to listen: listen tcp4: address 8080: missing port in address
+[127.0.0.1]:54594 status:404 - GET reqId: WQyLayWhaVbqwLV1XZ0LdL56mAgT8AiQqPkY5ailAbQ, time:           0s
+2026/05/04 17:36:09.052453 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:54594 status:200 - GET reqId: V_PAI9optoljw3VKUrvXTwqrGQnX_ANFm324WDIdGaA, time:     54.157ms
+2026/05/04 17:36:48.613496 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:61586 status:200 - GET reqId: RLBburkpx6tDzY_79kbfmTg5uZgOJdxQLl_0UsMI6aM, time:    76.5015ms
+2026/05/04 17:37:20.974745 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:61586 status:200 - GET reqId: qw_nUc-oVjJXbB-luJRrKZH8CVsm3t2VwHO_fEcYg1E, time:     1.0494ms
+2026/05/04 17:37:27.585848 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:54684 status:404 - GET reqId: 7vybDtFfLde0NPdCptCU6yEkl-9duJZT0OcASwf9T9c, time:    82.7069ms
+2026/05/04 17:37:29.548346 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:54684 status:404 - GET reqId: 5qB2cDkFNc8x_dTStXxaq9p8WXeV4Ow_PijsjmHdj-U, time:     1.0799ms
+2026/05/04 17:37:55.566377 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:62321 status:404 - GET reqId: ILRBTynIH7GwyHaUyp4WhRX07Pkx0sFxpTx1aKx_pF8, time:    70.5007ms
+2026/05/04 17:37:57.542106 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:62321 status:404 - GET reqId: gQgDv53DAdWMKORFcGyTDGXzrIFZ9aW9boFEeAYV2Yc, time:     1.1482ms
+2026/05/04 17:38:06.322763 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:63965 status:404 - GET reqId: mScKC7ufvH2Rm3OyHGk9KHAtuT2hSt9sRWmpG6yogJ4, time:    83.7811ms
+2026/05/04 17:38:41.359936 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:54081 status:404 - GET reqId: SmfWF7eW0cPDstnw5Aj7N_RbZXv7ECvZSJ3Dtqstjz8, time:     1.3915ms
+2026/05/04 17:38:42.642295 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:54081 status:404 - GET reqId: xPKW8rGzj2Chs6e6aQG38zAnUmJpObloaZKWR1qEG6U, time:     1.1648ms
+2026/05/04 17:38:43.956194 company.go:13: [Error] Error Getting Companies, err:%!(EXTRA *pgconn.PrepareError=ERROR: relation "companies" does not exist (SQLSTATE 42P01))
+[127.0.0.1]:54081 status:404 - GET reqId: fnC3YVpSH6eCkd-1HU-lprYvNYKibDrjUJm-x-9-JNw, time:      1.452ms
+2026/05/04 17:39:16.132558 company.go:53: [Info] Returning all companies
+[127.0.0.1]:59135 status:200 - GET reqId: ONchKiX9oBCzI3KGh5im1cbwW26ySZNG5rLKbCsrPfc, time:     4.4936ms
+[127.0.0.1]:53809 status:404 - POST reqId: zDuO4mRFvx_rh7D9PqlKM6XAPEANB-_0NVrsyvtpLNM, time:           0s
+[127.0.0.1]:53809 status:405 - POST reqId: nu6RBEWwfoTVjLMz9OHi5sP2cPtuh8tmQGl30gKxSpU, time:           0s
+2026/05/04 17:48:43.439637 company.go:39: [Info] Company created, id:50881669-86eb-4b7b-9e15-756e95b930cb
+[127.0.0.1]:57591 status:200 - POST reqId: 3xdEZ9jJx4-tbhExlr3Qy7GbzYWVgwuvN3KJw9qV-eY, time:     5.8868ms
+2026/05/04 17:49:01.819019 company.go:25: [Error] Error getting Company, err:%!(EXTRA pgx.ScanArgError=can't scan into dest[0] (col: id): cannot scan uuid (OID 2950) in binary format into *uint)
+[127.0.0.1]:57591 status:404 - GET reqId: Sq6UR_v-gHy3cf_omhlCX_pVR1yOthgdzxA7Snz-52s, time:     2.1165ms
+2026/05/04 17:49:18.583228 company.go:15: [Error] Error getting Companies, err:%!(EXTRA pgx.ScanArgError=can't scan into dest[0] (col: id): cannot scan uuid (OID 2950) in binary format into *uint)
+[127.0.0.1]:57591 status:404 - GET reqId: rv18K_ueUpfMh-bUKwSLbRjQtvIYR8lxtPciWgMfxCk, time:     2.5919ms
+2026/05/04 17:49:48.871093 company.go:53: [Info] Returning all companies
+[127.0.0.1]:64257 status:200 - GET reqId: 6oB9bbJvgzvxqsmK2EivrZizM9mHhJ4yNS7M46dAEJQ, time:      3.422ms
+2026/05/04 17:49:53.750780 company.go:72: [Info] Returning company id: %!d(string=50881669-86eb-4b7b-9e15-756e95b930cb)
+[127.0.0.1]:64257 status:200 - GET reqId: cky0QLPPw4KQseVYqJinH4YVNHnS1ghFVmdJniLtIjs, time:     2.1767ms
+2026/05/04 17:50:11.071230 company.go:37: [Error] Wrong input bind from body: unexpected end of JSON input
+[127.0.0.1]:64257 status:400 - POST reqId: oqe0SKl2sHYXQtq4AIMSjbA2l3gkbjTZKb2RNI1oslo, time:           0s
+2026/05/04 17:58:21.345370 company.go:35: [Error] Wrong input bind "industry" from body: json: cannot unmarshal number into Go struct field InputCompany.industry of type string
+[127.0.0.1]:52726 status:400 - POST reqId: DOb9VhfNwpKAH0bOkcGAREpaFGgug1IBZAvhlhR5zdY, time:     1.8361ms
+2026/05/04 17:58:50.753340 company.go:39: [Info] Company created, id:dc2c8500-6f25-450a-bf32-00f0eef5afb1
+[127.0.0.1]:52726 status:200 - POST reqId: eZSewBCwr6fj42qIXnTb-MChqlnvmJaprEx4AivEUfw, time:     5.0405ms
+2026/05/04 17:58:54.709663 company.go:53: [Info] Returning all companies
+[127.0.0.1]:52726 status:200 - GET reqId: hNKVakEf_3BrHITSRlF8qHFVzaB3OsPxDEsm8VmKeAg, time:     2.8172ms
+2026/05/04 17:59:28.626007 company.go:39: [Info] Company created, id:0fe85d33-82c9-440e-895e-089e38ffa5c4
+[127.0.0.1]:64222 status:200 - POST reqId: jAjmtyK0pFMlQon8NHZQE-XMTmlU3AcS5VmHJrVL9zs, time:     7.4863ms
+2026/05/04 17:59:43.027722 company.go:39: [Info] Company created, id:e3320509-81c9-4a64-bdf8-be3a49dcb94a
+[127.0.0.1]:50246 status:200 - POST reqId: qUUbK1Oy0CHw4NLXLq06_2h1ukU9micC2InbfEsqsZ4, time:      6.426ms
+2026/05/04 18:00:10.830452 company.go:39: [Info] Company created, id:8157849d-5019-4e26-9c68-f0342f8e8a80
+[127.0.0.1]:50246 status:200 - POST reqId: eaqXe1Z8yEoUGBkFBMg8rmDV8kGrxji6oVzTxeFkmx0, time:      1.512ms
+2026/05/04 18:00:15.358676 company.go:53: [Info] Returning all companies
+[127.0.0.1]:50246 status:200 - GET reqId: bA6wvqLJj23NurUPY5Gv3AqvrxwC4gEOhcypKoQ58rE, time:      2.643ms
+[127.0.0.1]:57270 status:405 - PATCH reqId: gkG6m8igDTh89gevviHhQ_FdnxMtC9r8_9o6-K3zWQ0, time:           0s
+2026/05/04 18:03:21.155421 company.go:88: [Info] Company updated, id: 8157849d-5019-4e26-9c68-f0342f8e8a80
+[127.0.0.1]:49671 status:200 - PATCH reqId: N5bhEnSHcqVWxWsu474rgFqPd1o5Dh4_iTrgkNF1MKo, time:     8.7486ms
+2026/05/04 18:03:50.384202 company.go:88: [Info] Company updated, id: 8157849d-5019-4e26-9c68-f0342f8e8a80
+[127.0.0.1]:49671 status:200 - PATCH reqId: rw8DRG6seZYA4--XRntvdkP7Zww8LA95scwThPAoqFE, time:     2.9324ms
+2026/05/04 18:05:27.342718 company.go:88: [Info] Company updated, id: 8157849d-5019-4e26-9c68-f0342f8e8a80
+[127.0.0.1]:60897 status:200 - PATCH reqId: tIyYy4KSZ43fx1qjSmQOtoZtdkXHkg-p5TWMTXnN3Hs, time:     5.4716ms
+2026/05/04 18:05:58.271472 company.go:88: [Info] Company updated, id: 8157849d-5019-4e26-9c68-f0342f8e8a80
+[127.0.0.1]:51329 status:200 - PATCH reqId: dpG6rh22p0UNqUtuG4SlnohAZUwcMKLnVZB0Pfkw1f8, time:     9.2212ms
+2026/05/04 18:10:48.312335 company.go:67: [Error] Wrong input Key: 'InputCompany.Industry' Error:Field validation for 'Industry' failed on the 'len' tag
+[127.0.0.1]:57679 status:400 - PATCH reqId: Sxrm2K2rmXbChtCHxNq86AdX8Q74TEfL3-y1TO44koI, time:      535.2µs
+2026/05/04 18:10:57.779951 company.go:67: [Error] Wrong input Key: 'InputCompany.Industry' Error:Field validation for 'Industry' failed on the 'len' tag
+[127.0.0.1]:57679 status:400 - PATCH reqId: jQp8yMfmQ2M-pHDmuxUHnQzY404ZpoENWymouGo0q60, time:           0s
+2026/05/04 18:11:00.850278 company.go:67: [Error] Wrong input Key: 'InputCompany.Industry' Error:Field validation for 'Industry' failed on the 'len' tag
+[127.0.0.1]:57679 status:400 - PATCH reqId: ke6ru4W1nV06ULN9xuUUtn249mAXGdxs2_qxcPt1io0, time:           0s
+2026/05/04 18:11:11.909520 company.go:88: [Info] Company updated, id: 8157849d-5019-4e26-9c68-f0342f8e8a80
+[127.0.0.1]:64978 status:200 - PATCH reqId: q3CqAJu19ZATKZNoIG0ArZk8kuEpcx9WjK1o1h67RI0, time:     5.3632ms
+2026/05/04 18:11:15.683445 company.go:53: [Info] Returning all companies
+[127.0.0.1]:64978 status:200 - GET reqId: fPhKGJ53Nmv4VgquEETWH2mjk4wlExOkFu8o5a51OAg, time:     2.1336ms
