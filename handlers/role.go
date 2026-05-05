@@ -9,80 +9,80 @@ import (
 	"github.com/gofiber/fiber/v3/log"
 )
 
-func GetCompanies(ctx fiber.Ctx) error {
-	companies, err := db.GetCompanies()
+func GetRoles(ctx fiber.Ctx) error {
+	companies, err := db.GetRoles()
 	if err != nil {
-		log.Errorf("Error getting Companies, err:", err)
+		log.Errorf("Error getting Roles, err:", err)
 		return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{"error": err.Error()})
 	}
 
 	return ctx.JSON(companies)
 }
-func GetOneCompany(ctx fiber.Ctx) error {
+func GetOneRole(ctx fiber.Ctx) error {
 	id := ctx.Params("id")
-	company, err := db.GetOneCompany(id)
+	role, err := db.GetOneRole(id)
 	if err != nil {
-		log.Errorf("Error getting Company, err:", err)
+		log.Errorf("Error getting Role, err:", err)
 		return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	return ctx.JSON(company)
+	return ctx.JSON(role)
 }
-func CreateCompany(ctx fiber.Ctx) error {
-	var company dto.InputCompany
-	company, err := helper.Parser(ctx, company)
+func CreateRole(ctx fiber.Ctx) error {
+	var role dto.InputRole
+	role, err := helper.Parser(ctx, role)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err = helper.Validate(company)
+	err = helper.Validate(role)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
 
-	id, err := db.CreateCompany(company)
+	id, err := db.CreateRole(role)
 
 	if err != nil {
-		log.Errorf("Error creating Company, err:", err)
+		log.Errorf("Error creating Role, err:", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	return ctx.JSON(fiber.Map{"company created, id:": id})
+	return ctx.JSON(fiber.Map{"role created, id:": id})
 }
-func PatchCompany(ctx fiber.Ctx) error {
-	var company dto.InputCompany
+func PatchRole(ctx fiber.Ctx) error {
+	var role dto.InputRole
 	id := ctx.Params("id")
-	company, err := helper.Parser(ctx, company)
+	role, err := helper.Parser(ctx, role)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err = helper.Validate(company)
+	err = helper.Validate(role)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 	
-	id, err = db.PatchCompany(id, company)
+	id, err = db.PatchRole(id, role)
 	if err != nil {
-		log.Errorf("Error updating Company, err:", err)
+		log.Errorf("Error updating Role, err:", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	return ctx.JSON(fiber.Map{"company updated, id:": id})
+	return ctx.JSON(fiber.Map{"role updated, id:": id})
 }
-func DeleteCompany(ctx fiber.Ctx) error {
+func DeleteRole(ctx fiber.Ctx) error {
 	id := ctx.Params("id")
 
-	id, err := db.DeleteCompany(id)
+	id, err := db.DeleteRole(id)
 	if err != nil {
-		log.Errorf("Error deleting Company, err:", err)
+		log.Errorf("Error deleting Role, err:", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	return ctx.JSON(fiber.Map{"company deleted, id:": id})
+	return ctx.JSON(fiber.Map{"role deleted, id:": id})
 }

@@ -72,3 +72,51 @@
 [127.0.0.1]:64978 status:200 - PATCH reqId: q3CqAJu19ZATKZNoIG0ArZk8kuEpcx9WjK1o1h67RI0, time:     5.3632ms
 2026/05/04 18:11:15.683445 company.go:53: [Info] Returning all companies
 [127.0.0.1]:64978 status:200 - GET reqId: fPhKGJ53Nmv4VgquEETWH2mjk4wlExOkFu8o5a51OAg, time:     2.1336ms
+2026/05/05 10:06:37.744245 company.go:88: [Info] Company updated, id: 8157849d-5019-4e26-9c68-f0342f8e8a80
+[127.0.0.1]:53410 status:200 - PATCH reqId: 4igUgBA26icKJYg5GNvtHbL33h2JPtUc2tSjmlm0pFc, time:     62.259ms
+2026/05/05 10:06:58.332385 company.go:53: [Info] Returning all companies
+[127.0.0.1]:54005 status:200 - GET reqId: ti5mMXymGtZ7Bf0i3fE3Bo13AK4XHwrxrg-4r_gvtUE, time:     1.7311ms
+2026/05/05 10:07:12.687499 company.go:102: [Info] Company deleted, id: dc2c8500-6f25-450a-bf32-00f0eef5afb1
+[127.0.0.1]:54005 status:200 - DELETE reqId: KPicG8SDjqDE3b554Gd3f4ns8tyU_I6Jobl9nYqUJlQ, time:      1.294ms
+2026/05/05 10:07:15.933462 company.go:53: [Info] Returning all companies
+[127.0.0.1]:54005 status:200 - GET reqId: e7pBaDocMMNTP3vLdjPwzjW7up_3fhbZEAX8zQCAtDQ, time:     1.4284ms
+2026/05/05 10:07:30.833152 company.go:102: [Info] Company deleted, id: 0fe85d33-82c9-440e-895e-089e38ffa5c4
+[127.0.0.1]:54005 status:200 - DELETE reqId: gi8b_WXks85QVAb7F87KzpuuShAMnTxPFlKcg_uepWI, time:     2.6087ms
+2026/05/05 10:07:42.200271 company.go:102: [Info] Company deleted, id: e3320509-81c9-4a64-bdf8-be3a49dcb94a
+[127.0.0.1]:54005 status:200 - DELETE reqId: -pHoJFky1l0IxQ74SuSIunq_rhvkYGWd-ySYBzULcc8, time:     3.7314ms
+2026/05/05 10:07:55.875552 company.go:84: [Error] Error deleting Company, err:%!(EXTRA *fiber.Error=Not Found)
+[127.0.0.1]:54005 status:400 - DELETE reqId: sWAA2BrHXH1j_rPjCezcDiPPCw2YFhxNQbkn_6ZMiPQ, time:      515.2µs
+2026/05/05 10:07:57.763083 company.go:102: [Info] Company deleted, id: 8157849d-5019-4e26-9c68-f0342f8e8a80
+[127.0.0.1]:54005 status:200 - DELETE reqId: gU2GtItWMpaVU12c0AVcOVKK_trlV9UtiELAltKhKu8, time:     1.6293ms
+2026/05/05 10:08:00.211786 company.go:53: [Info] Returning all companies
+[127.0.0.1]:54005 status:200 - GET reqId: wWuouL1MFdLEaMzZe5c7b90xfIFtxYMYZloAcDID9Vg, time:     1.8398ms
+2026/05/05 10:08:07.070939 company.go:42: [Error] Wrong input Key: 'InputCompany.Industry' Error:Field validation for 'Industry' failed on the 'required' tag
+[127.0.0.1]:54005 status:400 - POST reqId: fM9swPS76S368FUjXuYr5tl7w5I_omeqgC9oKyiVgoo, time:           0s
+2026/05/05 10:08:18.485954 company.go:39: [Info] Company created, id:155ff664-879f-4fb1-a5a1-ce45b18f460d
+[127.0.0.1]:54005 status:200 - POST reqId: fRlf-7sWsiI7kFx3CXnMLph26c17mF2YrNi8ySpUCg0, time:     4.6751ms
+2026/05/05 10:08:27.539311 company.go:88: [Info] Company updated, id: 155ff664-879f-4fb1-a5a1-ce45b18f460d
+[127.0.0.1]:54005 status:200 - PATCH reqId: yZeYqXIVhLgQ8QGDxOb9TFR_BWPEPplkBYoX37yqWB4, time:     2.8505ms
+2026/05/05 10:08:31.132282 company.go:53: [Info] Returning all companies
+[127.0.0.1]:54005 status:200 - GET reqId: FnE9itrEcoG37lmdkMuVJTUo2YD45Z391yLou7U9z40, time:     1.3309ms
+2026/05/05 10:19:15.846654 role.go:51: [Info] Returning all companies
+[127.0.0.1]:53306 status:200 - GET reqId: -IboV1RaCKXuPj_tF6qOV6YGpMrUk8iTt3az_D_g_4k, time:     9.3872ms
+2026/05/05 10:19:30.261985 company.go:72: [Info] Returning company id: %!d(string=50881669-86eb-4b7b-9e15-756e95b930cb)
+[127.0.0.1]:53306 status:200 - GET reqId: ZnPVclbV84ZloGAK055cjrn5NerrlXPUWkLufUd5yVg, time:      3.326ms
+2026/05/05 10:19:34.496494 role.go:25: [Error] Error getting Role, err:%!(EXTRA *pgx.proxyError=no rows in result set)
+[127.0.0.1]:53306 status:404 - GET reqId: xMMbXlhT7zDIkqq1r9DwRYLsm_opknf565x5DAKT2Gc, time:     1.9818ms
+2026/05/05 10:19:49.123374 role.go:68: [Info] Returning role id: %!d(string=f873d964-c2fc-478d-865c-5329a05fa5c9)
+[127.0.0.1]:53306 status:200 - GET reqId: Q7u9d5Tumj1oFTJkT9Mf68QDFJhpmGNxrpAVfvDrhSQ, time:     1.0692ms
+2026/05/05 10:20:08.009564 role.go:37: [Info] Role created, id:7f3d080f-475c-4057-bf78-3a6c5f6e436b
+[127.0.0.1]:53306 status:200 - POST reqId: 0PxAxzDNW4ZV6buQnJUflwqBSRQ8bVfIk2rZHznUUG0, time:     4.1302ms
+2026/05/05 10:20:14.925920 role.go:51: [Info] Returning all companies
+[127.0.0.1]:53306 status:200 - GET reqId: j5Gz_Y3duNSpm22T3qs7mcgQhUGU5gZERAVKVNfabeQ, time:     1.2237ms
+2026/05/05 10:20:25.718740 role.go:84: [Info] Role updated, id: 7f3d080f-475c-4057-bf78-3a6c5f6e436b
+[127.0.0.1]:53306 status:200 - PATCH reqId: xbZntJgLxFdMee1leDtjuU_qOtz24ZwGRpD8IJJWx-E, time:     2.7447ms
+2026/05/05 10:20:27.812321 role.go:51: [Info] Returning all companies
+[127.0.0.1]:53306 status:200 - GET reqId: N9Fp4r4lGPF4MrZfU9uR__Y8WAwP7QBf9iLO4hkZdAU, time:     1.2422ms
+2026/05/05 10:20:36.760399 role.go:98: [Info] Role deleted, id: 7f3d080f-475c-4057-bf78-3a6c5f6e436b
+[127.0.0.1]:53306 status:200 - DELETE reqId: MjSY5UjCYjaO2MgWey5Wq_vReGjeZi-7fFkK9QCZN-s, time:     3.8155ms
+2026/05/05 10:20:48.862913 role.go:72: [Error] Error updating Role, err:%!(EXTRA *fiber.Error=Not Found)
+[127.0.0.1]:53306 status:400 - PATCH reqId: sc-nFIbbAWsJUGXmKOUAEYvnH3oKeHHqniqk4U9sxyQ, time:     1.4478ms
+2026/05/05 10:20:52.171281 role.go:51: [Info] Returning all companies
+[127.0.0.1]:53306 status:200 - GET reqId: bLk-OSBOw_x2bGinxcRC1w11_9rA0044pzL2zaLic48, time:     1.1283ms

@@ -84,5 +84,12 @@ func main() {
 	companyRouter.Patch("/:id",handlers.PatchCompany)
 	companyRouter.Delete("/:id",handlers.DeleteCompany)
 
+	roleRouter:=app.Group("/role")
+	roleRouter.Get("/",handlers.GetRoles)
+	roleRouter.Get("/:id",handlers.GetOneRole)
+	roleRouter.Post("/",handlers.CreateRole)
+	roleRouter.Patch("/:id",handlers.PatchRole)
+	roleRouter.Delete("/:id",handlers.DeleteRole)
+	
 	log.Fatal(app.Listen(":" + os.Getenv("PORT")))
 }
