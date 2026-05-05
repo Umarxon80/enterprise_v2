@@ -10,13 +10,13 @@ import (
 )
 
 func GetRoles(ctx fiber.Ctx) error {
-	companies, err := db.GetRoles()
+	roles, err := db.GetRoles()
 	if err != nil {
 		log.Errorf("Error getting Roles, err:", err)
 		return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	return ctx.JSON(companies)
+	return ctx.JSON(roles)
 }
 func GetOneRole(ctx fiber.Ctx) error {
 	id := ctx.Params("id")

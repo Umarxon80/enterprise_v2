@@ -21,5 +21,11 @@ func Connect() {
 	if err := createCompaniesTable(); err != nil {
 		log.Fatalf("Error creating companies table %v", err)
 	}
+	if err := createRoleTable(); err != nil {
+		log.Fatalf("Error creating role table %v", err)
+	}
+	if err := createUserTable(); err != nil {
+		log.Fatalf("Error creating user table %v", err)
+	}
 
 }

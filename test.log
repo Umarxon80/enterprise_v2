@@ -120,3 +120,103 @@
 [127.0.0.1]:53306 status:400 - PATCH reqId: sc-nFIbbAWsJUGXmKOUAEYvnH3oKeHHqniqk4U9sxyQ, time:     1.4478ms
 2026/05/05 10:20:52.171281 role.go:51: [Info] Returning all companies
 [127.0.0.1]:53306 status:200 - GET reqId: bLk-OSBOw_x2bGinxcRC1w11_9rA0044pzL2zaLic48, time:     1.1283ms
+2026/05/05 10:43:10.942802 user.go:15: [Error] Error getting Users, err:%!(EXTRA *pgconn.PrepareError=ERROR: missing FROM-clause entry for table "u" (SQLSTATE 42P01))
+[127.0.0.1]:63308 status:404 - GET reqId: cyFqQpneR5iyU-GN1wpYv63mLJYtczsikL7TpstuyeU, time:     6.5169ms
+2026/05/05 10:44:12.879031 user.go:15: [Error] Error getting Users, err:%!(EXTRA *pgconn.PrepareError=ERROR: column "id" does not exist (SQLSTATE 42703))
+[127.0.0.1]:65110 status:404 - GET reqId: ymmWjFm_asPR6z8DST-ZlzLrlN2c-h2_8L53GxWW1Yc, time:     2.3703ms
+2026/05/05 10:45:47.416879 db.go:25: [Fatal] Error creating role table ERROR: syntax error at or near ")" (SQLSTATE 42601)
+2026/05/05 10:46:13.332439 db.go:25: [Fatal] Error creating role table ERROR: syntax error at or near ")" (SQLSTATE 42601)
+2026/05/05 10:47:12.059934 db.go:25: [Fatal] Error creating role table ERROR: syntax error at or near ")" (SQLSTATE 42601)
+2026/05/05 10:48:18.180649 user.go:15: [Error] Error getting Users, err:%!(EXTRA *pgconn.PrepareError=ERROR: column "id" does not exist (SQLSTATE 42703))
+[127.0.0.1]:61725 status:404 - GET reqId: eupO1g9-INQLK29u52jULJ28A9w5433k-loNaTMsGPQ, time:     1.5976ms
+2026/05/05 10:48:19.967320 user.go:15: [Error] Error getting Users, err:%!(EXTRA *pgconn.PrepareError=ERROR: column "id" does not exist (SQLSTATE 42703))
+[127.0.0.1]:61725 status:404 - GET reqId: uMW484pxaK2z6Y5apcR9tZZT20Jh4En_bad61N05Wgw, time:      505.2µs
+2026/05/05 10:49:49.481267 user.go:15: [Error] Error getting Users, err:%!(EXTRA *pgconn.PrepareError=ERROR: column u.role_id does not exist (SQLSTATE 42703))
+[127.0.0.1]:64570 status:404 - GET reqId: ZUk7wOfG2NzT4E8pgmCON9VbxU3XESDVS8dqlOEplI0, time:     3.5961ms
+2026/05/05 10:51:28.873165 user.go:15: [Error] Error getting Users, err:%!(EXTRA *pgconn.PrepareError=ERROR: column u.role_id does not exist (SQLSTATE 42703))
+[127.0.0.1]:52265 status:404 - GET reqId: -G_fWB0YZDOTO15ITmGOarLTwmKnxb8G8v1HssH6qIY, time:      1.057ms
+2026/05/05 10:51:30.402419 user.go:15: [Error] Error getting Users, err:%!(EXTRA *pgconn.PrepareError=ERROR: column u.role_id does not exist (SQLSTATE 42703))
+[127.0.0.1]:52265 status:404 - GET reqId: lvfR64N4nBcLrOHPTIxExWg3nlYFQjxey3mNZaQNP-s, time:      824.1µs
+2026/05/05 10:51:40.647933 user.go:15: [Error] Error getting Users, err:%!(EXTRA *pgconn.PrepareError=ERROR: column u.role_id does not exist (SQLSTATE 42703))
+[127.0.0.1]:52508 status:404 - GET reqId: KHj_O0XgPW7FCw9LiPygtdwDBezF5ReRbqtaoKnYj-I, time:     2.1943ms
+2026/05/05 10:52:14.979202 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field user)
+[127.0.0.1]:53284 status:404 - GET reqId: 3IayLX9NOC0DTwNXk9CoznZcxo-XlLRYVcMRMDYbJd8, time:     2.7477ms
+2026/05/05 10:54:01.170645 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field user)
+[127.0.0.1]:56303 status:404 - GET reqId: _i0yzGOCUqSgoP76eQd8v0-WDDh-pl5OHXke-jLtWkE, time:     3.3927ms
+2026/05/05 10:54:02.247758 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field user)
+[127.0.0.1]:56303 status:404 - GET reqId: mTRaeeglovy2GN5TZp7ChOpodewpTZAEAGIJcxbOJjk, time:      640.4µs
+2026/05/05 10:54:21.958949 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field user)
+[127.0.0.1]:56887 status:404 - GET reqId: hKEJ3Slp1yADyOEfVuVZxbdGdHI0cY8K6-HYaYMKOgY, time:     1.2411ms
+2026/05/05 10:55:33.089245 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field user)
+[127.0.0.1]:59391 status:404 - GET reqId: DtuwSTWBC611nfxGAvvyS4VQzYCh3RApnMzkGlBJ7oA, time:     2.0336ms
+2026/05/05 10:56:48.701191 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field user)
+[127.0.0.1]:61701 status:404 - GET reqId: SF_SndwpgSe3hozGHD95BrNlfpnSdkq6NASphr6GnYU, time:      1.029ms
+2026/05/05 10:56:50.070396 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field user)
+[127.0.0.1]:61701 status:404 - GET reqId: zZTm8eaxdD25PlIMBxpM-oHYRngj8Gd2_Tu2D4-3fH4, time:     1.4416ms
+2026/05/05 10:57:42.006785 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field user)
+[127.0.0.1]:63636 status:404 - GET reqId: 6qFrxdBnhUAYIauQy8O3JrAVHqJ-ODkFUHBA8apwWiI, time:     1.2829ms
+2026/05/05 10:57:43.463757 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field user)
+[127.0.0.1]:63636 status:404 - GET reqId: s3jdxMFxVSTHG02RKB3l0xvOFGrOOj3sXRxNN77tC6o, time:     1.3995ms
+2026/05/05 10:59:39.361874 user.go:49: [Error] Error creating User, err:%!(EXTRA *pgconn.PrepareError=ERROR: syntax error at or near "user" (SQLSTATE 42601))
+[127.0.0.1]:51942 status:400 - POST reqId: FQrZ32WOacJB8s4Wg2qyrMyxKo26F1gnsmuLNcal-jY, time:     1.5057ms
+2026/05/05 11:00:16.734255 user.go:44: [Info] User created, id:8aa98462-036a-4db3-96bc-763d58cfad58
+[127.0.0.1]:53061 status:200 - POST reqId: ljTz0H17PwuZol1hSe7RZ1lraFGkCHbOguLkTfh_SA4, time:    11.1377ms
+2026/05/05 11:00:21.206101 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field role_id)
+[127.0.0.1]:53061 status:404 - GET reqId: uy0vOkxjcHRPyOpeAfgOw7UQSGcA2VaSXbJ40u2NObY, time:     2.2659ms
+2026/05/05 11:01:32.897941 user.go:58: [Info] Returning all users
+[127.0.0.1]:55133 status:200 - GET reqId: jdHfdlpAMaT56-y1vsiYoPptKPFf6m82uMPqmsIvrqg, time:     5.8547ms
+2026/05/05 11:03:20.887780 user.go:93: [Info] Returning user id: 8aa98462-036a-4db3-96bc-763d58cfad58
+[127.0.0.1]:58690 status:200 - GET reqId: cvEH885puNTAQqo2VWsk1lNWrRmj30nY1sF_s2-sRTI, time:     8.8039ms
+2026/05/05 11:03:48.965479 user.go:95: [Info] Returning user id: 8aa98462-036a-4db3-96bc-763d58cfad58
+[127.0.0.1]:59589 status:200 - GET reqId: x5jl95h0nuBCNtc7SHH9yiV90AMtp5jTJqq70H-Dxpc, time:      6.404ms
+2026/05/05 11:04:07.846384 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field role)
+[127.0.0.1]:60213 status:404 - GET reqId: 60MwvBvTvDCZ35gcNDBGronLSxk7K4SO0CK8pDpmuiY, time:     6.4913ms
+2026/05/05 11:04:24.497695 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field role_id)
+[127.0.0.1]:60767 status:404 - GET reqId: yCdrjFgdNLD0tieo2bJuF83F0XGq0a28-aBY16liNlk, time:     4.3518ms
+2026/05/05 11:04:26.344589 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field role_id)
+[127.0.0.1]:60767 status:404 - GET reqId: SrUBNvPn3dGoFws0TeNU0hFMCxIyf6Mp7AVJt_W-rhU, time:      768.2µs
+2026/05/05 11:05:16.012175 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field role_id)
+[127.0.0.1]:62417 status:404 - GET reqId: 9rnDlo4RJObTEs34lC3QbeiGP_0FN9Q0pEBVlbFLmBw, time:      7.676ms
+2026/05/05 11:06:04.786515 user.go:106: [Info] Returning user id: 8aa98462-036a-4db3-96bc-763d58cfad58
+[127.0.0.1]:64120 status:200 - GET reqId: 9qUtFYz6EQK4OE9YsZYpMx40gBZrdSbcbxMsY2sh__Y, time:     7.4144ms
+2026/05/05 11:06:08.474056 user.go:15: [Error] Error getting Users, err:%!(EXTRA *errors.errorString=struct doesn't have corresponding row field role)
+[127.0.0.1]:64120 status:404 - GET reqId: NXiOSbu9dTeukQMvLCAJhDLMCMB6JCBP9i9AZCtd2bY, time:     1.5505ms
+2026/05/05 11:06:51.390571 user.go:15: [Error] Error getting Users, err:%!(EXTRA pgx.ScanArgError=can't scan into dest[5] (col: role): cannot scan varchar (OID 1043) in text format into *dto.OutputRole)
+[127.0.0.1]:65407 status:404 - GET reqId: eDDwnbuJfui_BhtP-I22p-htH0tJ_eInBHg9IbHyHdY, time:    12.0707ms
+2026/05/05 11:09:50.583496 user.go:89: [Info] Returning all users
+[127.0.0.1]:54867 status:200 - GET reqId: -20QPHONaUR7BjgxS5P_JtJQn9iIrc3L0zqnS8iY5-8, time:     7.2352ms
+2026/05/05 11:11:01.867603 user.go:126: [Info] Returning user id: 8aa98462-036a-4db3-96bc-763d58cfad58
+[127.0.0.1]:56348 status:200 - GET reqId: AoxZ7w9T766ZH8uXGaRizDuorG3_n267x4zobXFyp2M, time:     1.7081ms
+2026/05/05 11:11:31.668030 user.go:66: [Error] Wrong input Key: 'InputUser.FirstName' Error:Field validation for 'FirstName' failed on the 'required' tag
+Key: 'InputUser.LastName' Error:Field validation for 'LastName' failed on the 'required' tag
+Key: 'InputUser.Email' Error:Field validation for 'Email' failed on the 'required' tag
+Key: 'InputUser.Password' Error:Field validation for 'Password' failed on the 'required' tag
+[127.0.0.1]:56348 status:400 - PATCH reqId: 5tkoNA1YF9RVsAJSpo2qwsTLlMw3qUHlApfyBXeiTEg, time:      623.8µs
+2026/05/05 11:12:20.058913 user.go:72: [Error] Error updating User, err:%!(EXTRA *errors.errorString=mismatched param and argument count)
+[127.0.0.1]:56348 status:400 - PATCH reqId: Yb7YfjcivrO22Jr2SJWKEacBQQZpm0yd7fQ0QANQI6c, time:     1.9597ms
+2026/05/05 11:12:32.998300 user.go:72: [Error] Error updating User, err:%!(EXTRA *errors.errorString=mismatched param and argument count)
+[127.0.0.1]:56348 status:400 - PATCH reqId: s2ZzR6TI5ayaPaVU5qg_vVRepp7WadvUiTlJsUngqtw, time:     1.1484ms
+2026/05/05 11:14:35.196947 user.go:74: [Error] Error updating User, err:%!(EXTRA *errors.errorString=mismatched param and argument count)
+[127.0.0.1]:62167 status:400 - PATCH reqId: PIJZhkrDKlkE2ZuALRxinQUvFr4U_Kt2s6OTGjPWTjQ, time:     3.7849ms
+2026/05/05 11:15:14.742008 user.go:133: [Info] User updated, id: 8aa98462-036a-4db3-96bc-763d58cfad58
+[127.0.0.1]:63231 status:200 - PATCH reqId: YetSj4LZpvr6c4WpZcHwdi3ff5fIX9AnVKvO83_sv1c, time:     8.0661ms
+2026/05/05 11:15:18.501580 user.go:79: [Info] Returning all users
+[127.0.0.1]:63231 status:200 - GET reqId: cwOh1fdyMd5Ozpt5R0Z9wQ23Ac4qazIk4kYH2g2nSgM, time:     3.9195ms
+2026/05/05 11:15:32.291949 user.go:147: [Info] User deleted, id: 8aa98462-036a-4db3-96bc-763d58cfad58
+[127.0.0.1]:63231 status:200 - DELETE reqId: dDFtFkE6fWpI9chhzI7bELF33FK9FOp8NAVEZ9EspXY, time:      823.1µs
+2026/05/05 11:15:36.191467 user.go:79: [Info] Returning all users
+[127.0.0.1]:63231 status:200 - GET reqId: VlFagQANjFUrcMj3mMykfIl7U9lQ135rHuemOt0zZBQ, time:      640.6µs
+2026/05/05 11:15:41.891383 user.go:44: [Info] User created, id:ba6438c7-f65e-44e6-abb8-d231aafe32eb
+[127.0.0.1]:63231 status:200 - POST reqId: U3kVMn99s5FvoJ-sZ9qCouvxKC0oXpFLHi4WLZrLTbg, time:      3.422ms
+2026/05/05 11:25:30.809637 user.go:79: [Info] Returning all users
+[127.0.0.1]:63912 status:200 - GET reqId: 1xi0IjpTsiRnGukqkzlIO5AV7CrQNVC7jOhuZP6Kqts, time:     6.6354ms
+2026/05/05 11:25:31.801986 user.go:79: [Info] Returning all users
+[127.0.0.1]:63912 status:200 - GET reqId: GmxSjY80yLFu5m2ExDH9a9a13ozxKpIkl_qA11sUHoI, time:      504.7µs
+2026/05/05 11:25:36.720038 user.go:91: [Error] Error updating User, err:%!(EXTRA *fiber.Error=Not Found)
+[127.0.0.1]:63912 status:400 - PATCH reqId: 6xnz_sc4dmLW1E7NTUex1DKQVIhS1fmgLRB8kzykCdI, time:    22.2829ms
+2026/05/05 11:25:40.465757 user.go:79: [Info] Returning all users
+[127.0.0.1]:63912 status:200 - GET reqId: C9qfBfpRl9pJ4nR0QtS_ITLpovzCa5y60s1yeYgG9vY, time:      804.3µs
+2026/05/05 11:25:54.737841 user.go:133: [Info] User updated, id: ba6438c7-f65e-44e6-abb8-d231aafe32eb
+[127.0.0.1]:63912 status:200 - PATCH reqId: ddLmUl3qv_Ck2Bs5wGdYaM4fSqufmNagGfx5HBZ3E6E, time:     18.668ms
+2026/05/05 11:25:58.075846 user.go:79: [Info] Returning all users
+[127.0.0.1]:63912 status:200 - GET reqId: 6emin3UG7SF2M9vy6w7TjfxYiow3OLhb9fVpOETdMkQ, time:     1.0988ms

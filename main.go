@@ -90,6 +90,13 @@ func main() {
 	roleRouter.Post("/",handlers.CreateRole)
 	roleRouter.Patch("/:id",handlers.PatchRole)
 	roleRouter.Delete("/:id",handlers.DeleteRole)
-	
+
+	userRouter:=app.Group("/user")
+	userRouter.Get("/",handlers.GetUsers)
+	userRouter.Get("/:id",handlers.GetOneUser)
+	userRouter.Post("/",handlers.CreateUser)
+	userRouter.Patch("/:id",handlers.PatchUser)
+	userRouter.Delete("/:id",handlers.DeleteUser)
+
 	log.Fatal(app.Listen(":" + os.Getenv("PORT")))
 }

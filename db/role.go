@@ -13,7 +13,7 @@ func createRoleTable() error {
 	_, err := DbConnection.Exec(context.Background(), `
 	CREATE TABLE IF NOT EXISTS role(
 	id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-	name VARCHAR(255),
+	name VARCHAR(255)
 	)`)
 	if err != nil {
 		return err
