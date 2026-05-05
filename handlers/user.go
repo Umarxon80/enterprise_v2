@@ -31,14 +31,13 @@ func GetOneUser(ctx fiber.Ctx) error {
 func CreateUser(ctx fiber.Ctx) error {
 	var user dto.InputUser
 	// Body parsing
-	user, err := helper.Parser(ctx, user)
-	if err != nil {
+	if err:=ctx.Bind().JSON(&user);err!=nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
 	// Validation
-	err = helper.Validate(user)
+	err := helper.Validate(user)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
@@ -66,14 +65,13 @@ func PatchUser(ctx fiber.Ctx) error {
 	id := ctx.Params("id")
 	
 	// Body parsing
-	user, err := helper.Parser(ctx, user)
-	if err != nil {
+	if err:=ctx.Bind().JSON(&user);err!=nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
 	// Validation
-	err = helper.Validate(user)
+	err := helper.Validate(user)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})

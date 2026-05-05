@@ -220,3 +220,15 @@ Key: 'InputUser.Password' Error:Field validation for 'Password' failed on the 'r
 [127.0.0.1]:63912 status:200 - PATCH reqId: ddLmUl3qv_Ck2Bs5wGdYaM4fSqufmNagGfx5HBZ3E6E, time:     18.668ms
 2026/05/05 11:25:58.075846 user.go:79: [Info] Returning all users
 [127.0.0.1]:63912 status:200 - GET reqId: 6emin3UG7SF2M9vy6w7TjfxYiow3OLhb9fVpOETdMkQ, time:     1.0988ms
+2026/05/05 11:53:05.627023 user.go:154: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:64296 status:200 - POST reqId: 5s0kWEopliO8yTkZcA3iFuEMhf6hATByEbW1IcAi2Po, time:    36.2985ms
+2026/05/05 11:53:13.971204 require_auth.go:18: [Error] No token provided
+[127.0.0.1]:64296 status:401 - GET reqId: nPJCM0dIUVmtrjvX3nwUSsDe-qvVOquClKBXVpLB06s, time:      634.1µs
+2026/05/05 11:53:21.906298 role_check.go:16: [Error] Not allowev method id: <nil>
+[127.0.0.1]:64296 status:403 - GET reqId: pMFt0IsLdzD9vAA95rH2VwNQmXhytEnbCsYYKdRbEPc, time:           0s
+2026/05/05 11:54:06.468176 role_check.go:20: [Error] Not allowev method id: <nil>
+[127.0.0.1]:49987 status:403 - GET reqId: GX5s_Ua7JdiSwH2d9fMRB_pvp9dRJKGTLZV_Ki66Kgc, time:     1.8526ms
+2026/05/05 11:54:31.342867 user.go:79: [Info] Returning all users
+[127.0.0.1]:51102 status:200 - GET reqId: 0O9ASGDo6CiG-OvgZc-28aVTPay3aZ1ipI7sFxFsQnQ, time:     5.6186ms
+2026/05/05 11:54:44.631414 role_check.go:20: [Error] Not allowev method id: <nil>
+[127.0.0.1]:51565 status:403 - GET reqId: 1kggy2ScT4sPIPRF5fX0_ShQfw66ugsZop33kJvl37c, time:     1.7683ms

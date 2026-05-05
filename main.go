@@ -1,9 +1,11 @@
 package main
 
 import (
+	"enterprise_v2/auth"
 	"enterprise_v2/db"
 	"enterprise_v2/handlers"
 	customLogger "enterprise_v2/logger"
+	"enterprise_v2/middlewares"
 	"os"
 	"time"
 
@@ -92,11 +94,12 @@ func main() {
 	roleRouter.Delete("/:id",handlers.DeleteRole)
 
 	userRouter:=app.Group("/user")
-	userRouter.Get("/",handlers.GetUsers)
+	userRouter.Get("/",middlewares.RequireAuth,middlewares.RoleChecker([]string{"user"}), handlers.GetUsers)
 	userRouter.Get("/:id",handlers.GetOneUser)
 	userRouter.Post("/",handlers.CreateUser)
 	userRouter.Patch("/:id",handlers.PatchUser)
 	userRouter.Delete("/:id",handlers.DeleteUser)
 
+	app.Post("/login", auth.LogIn)
 	log.Fatal(app.Listen(":" + os.Getenv("PORT")))
 }

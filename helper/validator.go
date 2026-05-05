@@ -9,7 +9,7 @@ import (
 var val *validator.Validate= validator.New(validator.WithRequiredStructEnabled())
 
 type structTypes interface{
-	dto.InputCompany | dto.InputRole |dto.InputUser
+	dto.InputCompany | dto.InputRole |dto.InputUser | dto.Auth
 }
 
 func Validate[T structTypes](st T) error {

@@ -30,13 +30,12 @@ func GetOneRole(ctx fiber.Ctx) error {
 }
 func CreateRole(ctx fiber.Ctx) error {
 	var role dto.InputRole
-	role, err := helper.Parser(ctx, role)
-	if err != nil {
+	if err:=ctx.Bind().JSON(&role);err!=nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err = helper.Validate(role)
+	err := helper.Validate(role)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
@@ -55,13 +54,12 @@ func CreateRole(ctx fiber.Ctx) error {
 func PatchRole(ctx fiber.Ctx) error {
 	var role dto.InputRole
 	id := ctx.Params("id")
-	role, err := helper.Parser(ctx, role)
-	if err != nil {
+	if err:=ctx.Bind().JSON(&role);err!=nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err = helper.Validate(role)
+	err := helper.Validate(role)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})

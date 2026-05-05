@@ -117,6 +117,44 @@ func GetOneUser(id string) (dto.OutputUser, error) {
 	return user, nil
 }
 
+func GetOneByEmailUser(email string) (dto.OutputUser, error) {
+	var user dto.OutputUser
+
+	err := DbConnection.QueryRow(context.Background(), `
+	SELECT 
+		u.id, 
+		u.first_name, 
+		u.last_name, 
+		u.email, 
+		u.password, 
+		r.id AS role, 
+		r.name AS role, 
+		u.is_active, 
+		u.created_at, 
+		u.updated_at
+	FROM "user" u 
+	LEFT JOIN role r ON u.role_id = r.id 
+	WHERE u.email = $1
+	`, email).Scan(
+		&user.Id,
+		&user.FirstName,
+		&user.LastName,
+		&user.Email,
+		&user.Password,
+		&user.Role.Id,
+		&user.Role.Name,
+		&user.IsActive,
+		&user.CreatedAt,
+		&user.UpdatedAt,
+	)
+	if err != nil {
+		return dto.OutputUser{}, err
+	}
+
+	log.Infof("Returning user email: %s", email)
+	return user, nil
+}
+
 func PatchUser(id string, user dto.InputUser) (string, error) {
 	ch, err := DbConnection.Exec(context.Background(), `
 	UPDATE "user"

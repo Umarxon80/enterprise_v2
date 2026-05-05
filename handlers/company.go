@@ -30,13 +30,12 @@ func GetOneCompany(ctx fiber.Ctx) error {
 }
 func CreateCompany(ctx fiber.Ctx) error {
 	var company dto.InputCompany
-	company, err := helper.Parser(ctx, company)
-	if err != nil {
+	if err:=ctx.Bind().JSON(&company);err!=nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err = helper.Validate(company)
+	err := helper.Validate(company)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
@@ -55,13 +54,12 @@ func CreateCompany(ctx fiber.Ctx) error {
 func PatchCompany(ctx fiber.Ctx) error {
 	var company dto.InputCompany
 	id := ctx.Params("id")
-	company, err := helper.Parser(ctx, company)
-	if err != nil {
+	if err:=ctx.Bind().JSON(&company);err!=nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err = helper.Validate(company)
+	err := helper.Validate(company)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
