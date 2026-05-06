@@ -105,7 +105,12 @@ func main() {
 	
 	businessRouter:=app.Group("/business")
 	businessRouter.Post("/",middlewares.RequireAuth,middlewares.RoleChecker([]string{"user"}),handlers.UploadBusinessPlan)
+	businessRouter.Post("/payment",middlewares.RequireAuth,middlewares.RoleChecker([]string{"user"}),handlers.PayTaskBill)
 
-	
+	reviewerRouter:=app.Group("/review")
+	reviewerRouter.Get("/business_plans",middlewares.RequireAuth,middlewares.RoleChecker([]string{"reviewer"}),handlers.GetReviewerBusunessPlans)
+
+
+	app.Get("/test",middlewares.RequireAuth,handlers.Test)
 	log.Fatal(app.Listen(":" + os.Getenv("PORT")))
 }

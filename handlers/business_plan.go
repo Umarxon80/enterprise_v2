@@ -78,3 +78,11 @@ func UploadBusinessPlan(ctx fiber.Ctx) error {
 			"next_actions":"Please pay submission fee. Invoice was sent to your email",
 		})
 }
+
+func GetReviewerBusunessPlans(ctx fiber.Ctx) error  {
+	tasks,err:=db.GetTasks("review")
+	if err!=nil {
+		return ctx.Status(fiber.StatusInternalServerError).JSON(err.Error())
+	}
+	return ctx.JSON(tasks)
+}

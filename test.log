@@ -579,3 +579,116 @@ Key: 'InputUser.Password' Error:Field validation for 'Password' failed on the 'r
 2026/05/06 14:00:37.637788 bill.go:44: [Info] Bill created, invoice:33b61ec9-c154-4f72-8cd1-9721a357c2cb
 2026/05/06 14:00:41.046215 business_plan.go:75: [Info] Business plan was submited id: 3ab85af0-b2c1-40b2-a4f4-f59f7e98e5c1
 [127.0.0.1]:65393 status:202 - POST reqId: 3X33xg-7wzZltxdL1rTcIuBAyAGW6pLrKRlaNuarYjg, time:   3.4388046s
+2026/05/06 15:30:19.945146 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:62944 status:200 - POST reqId: w4Uq2uOZkLm2zMaX8Npt7odgLIQRrZKZ-6s3BMLwr9g, time:    24.5365ms
+[127.0.0.1]:62944 status:404 - GET reqId: gS8W5kNZnCVeNJAduxLgqj_WvWHKOLx8hw5_4FCjK9c, time:           0s
+[127.0.0.1]:62944 status:200 - GET reqId: nFH4_za8ZKNsVTh5BBsBl2FDI78GKEnPPeHrBomyRh8, time:     2.4279ms
+[127.0.0.1]:54254 status:200 - GET reqId: CmjaHLq3B7WDHzFfxTRteIelArmfL6tTI_suXHtFXDw, time:     2.5364ms
+2026/05/06 15:33:28.122588 user.go:80: [Info] Returning all users
+[127.0.0.1]:54254 status:200 - GET reqId: 50XK8t5_w60a8dsbPjnxuO_jfkd1qnT7LTXOSXmYM34, time:     5.8331ms
+2026/05/06 15:33:39.914599 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:54254 status:200 - POST reqId: DlwYu_nNcJFGT-V3ZAPQjLxNt4prZFug5IqtdHHR9iE, time:    20.1172ms
+[127.0.0.1]:54254 status:200 - GET reqId: WrCudFJFTFh32sPOZ1DxXK8EiaHhvl3vV6RqAkmDX_A, time:     2.0708ms
+[127.0.0.1]:51225 status:200 - GET reqId: S7gwOt13hSSxLjgXZ6NgI2U7AHFDkx3jtVUnDVTl6ns, time:     3.2723ms
+2026/05/06 15:35:59.729652 task.go:80: [Info] Returning task id: 6e313f78-fcca-4784-ba6d-24f20e7ebd0e
+2026/05/06 15:36:27.530453 task.go:80: [Info] Returning task id: 6e313f78-fcca-4784-ba6d-24f20e7ebd0e
+[127.0.0.1]:53299 status:200 - GET reqId: MnSAObCLfy2AwNgL-yDCBKb-ck24qftskDgLgEomjp0, time:    14.8627ms
+2026/05/06 15:38:08.348935 company_user.go:32: [Info] company_user created successfully
+2026/05/06 15:38:08.352932 business_plan.go:38: [Info] businessPlan created, id:20adf1ef-1e05-46e9-a7da-7b93edb86b54
+2026/05/06 15:38:08.360900 task.go:40: [Info] Task created, id:487fc2c5-602e-4843-a04d-d2a26756aaaf
+2026/05/06 15:38:08.366762 task_log.go:36: [Info] TaskLog created, id:76128fbb-8d57-4eb7-9365-03b356914879
+2026/05/06 15:38:08.371477 bill.go:44: [Info] Bill created, invoice:8f001c01-2a75-42e0-be88-6093770a2e41
+2026/05/06 15:38:10.823285 business_plan.go:75: [Info] Business plan was submited id: 20adf1ef-1e05-46e9-a7da-7b93edb86b54
+[127.0.0.1]:54768 status:202 - POST reqId: tVkwT9CeSHzlJ5N5dTi812UrOuj4kxaJl5o9_g0zlbg, time:   2.4876314s
+2026/05/06 15:45:12.725175 company_user.go:32: [Info] company_user created successfully
+2026/05/06 15:45:12.727038 business_plan.go:38: [Info] businessPlan created, id:352c6ef5-51ae-4a65-9c8d-199f60554d9a
+2026/05/06 15:45:12.728560 task.go:40: [Info] Task created, id:f2b93910-a1ee-4b73-8f63-1faac364e639
+2026/05/06 15:45:12.729076 task_log.go:36: [Info] TaskLog created, id:89b66a3b-00e3-40f9-8458-0f960a471d1d
+2026/05/06 15:45:12.729902 bill.go:44: [Info] Bill created, invoice:1910fe34-2d9c-4637-89d3-784079abc069
+2026/05/06 15:45:14.660643 business_plan.go:75: [Info] Business plan was submited id: 352c6ef5-51ae-4a65-9c8d-199f60554d9a
+[127.0.0.1]:56275 status:202 - POST reqId: HXVw9GHVnC61HaueJJMJnM96QbdQ9b_Ow1j8dzxOUGo, time:   1.9396238s
+2026/05/06 15:45:15.531095 company_user.go:32: [Info] company_user created successfully
+2026/05/06 15:45:15.531431 business_plan.go:38: [Info] businessPlan created, id:c82b0e8f-773d-4260-b545-14c518a39f8b
+2026/05/06 15:45:15.533499 task.go:40: [Info] Task created, id:3082d424-018f-4b60-9abd-656803dac4a5
+2026/05/06 15:45:15.535881 task_log.go:36: [Info] TaskLog created, id:54bca65d-d820-461a-b58a-a482c738a7f8
+2026/05/06 15:45:15.536686 bill.go:44: [Info] Bill created, invoice:a254fd4c-b884-49bc-985b-dd0293e5e436
+2026/05/06 15:45:18.074222 business_plan.go:75: [Info] Business plan was submited id: c82b0e8f-773d-4260-b545-14c518a39f8b
+[127.0.0.1]:56275 status:202 - POST reqId: 4tAFwDKOkaF3ydCiwb8RU95d9PSetgOFREBYo8s8yi4, time:   2.5459594s
+2026/05/06 15:46:12.145567 task.go:80: [Info] Returning task id: 487fc2c5-602e-4843-a04d-d2a26756aaaf
+[127.0.0.1]:57011 status:200 - GET reqId: RhapFv6UEMQpiqqZVrCcYFEbrJmWP8aTEMlseBW3a98, time:     2.9002ms
+2026/05/06 15:48:03.571828 company_user.go:32: [Info] company_user created successfully
+2026/05/06 15:48:03.574478 business_plan.go:38: [Info] businessPlan created, id:9532e92e-2dfb-442b-8d2f-4278db5561c7
+2026/05/06 15:48:03.578999 task.go:40: [Info] Task created, id:535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 15:48:03.583389 task_log.go:36: [Info] TaskLog created, id:09a71713-324a-42ad-8653-5b4547bf6871
+2026/05/06 15:48:03.585906 bill.go:44: [Info] Bill created, invoice:3a84e54a-1649-4434-85e3-95e029d07f1b
+2026/05/06 15:48:07.377263 business_plan.go:75: [Info] Business plan was submited id: 9532e92e-2dfb-442b-8d2f-4278db5561c7
+[127.0.0.1]:54634 status:202 - POST reqId: -ZOVeLP2YualauWW85hB3zi8rQnn7NPfQkngRrl_QrA, time:   3.8163593s
+2026/05/06 15:48:14.060811 task.go:80: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+[127.0.0.1]:54634 status:200 - GET reqId: IvICiFrU_Kobh3rP1Xnxpz8dXNzFjiU8Cvm9VhZoatU, time:     3.9151ms
+2026/05/06 16:02:17.188337 task.go:81: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:02:17.188843 bill.go:97: [Error] Error getting mext_node %!w(*pgconn.PrepareError=&{0xc0002c8200 false})
+[127.0.0.1]:65444 status:500 - POST reqId: 0DLBlYSn6qXVwoo2s4bZ95JgyET-7ExXD3D0rG2MABE, time:    21.1102ms
+2026/05/06 16:03:23.966399 task.go:81: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:03:23.967583 bill.go:97: [Error] Error getting next_node %!w(*pgconn.PrepareError=&{0xc0002ba100 false})
+[127.0.0.1]:54547 status:500 - POST reqId: 4hipGDR-sja9PGohCWJ6sx8i7bV3_FW_fG7WpFdlX2o, time:    26.9048ms
+2026/05/06 16:04:14.625064 task.go:81: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:04:14.626253 bill.go:97: [Error] Error getting next_node %!w(*pgconn.PrepareError=&{0xc0001f2500 false})
+[127.0.0.1]:56679 status:500 - POST reqId: w77jglNAeWc7xh_bAghHmCYxQcKs8xbqc2NP-OgZfsw, time:    18.8568ms
+2026/05/06 16:04:19.531583 task.go:81: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:04:19.532909 bill.go:97: [Error] Error getting next_node %!w(*pgconn.PrepareError=&{0xc0002a0100 false})
+[127.0.0.1]:56679 status:500 - POST reqId: cF7cEfm86yzQ6ZH2n7GLl2lchaNAEd1UDHmrsW9MQLc, time:     5.6307ms
+2026/05/06 16:04:49.225719 task.go:81: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:04:49.230328 bill.go:97: [Error] Error getting next_node %!w(pgx.ScanArgError={2 prev_node_id 0xc000108b50})
+[127.0.0.1]:55764 status:500 - POST reqId: HzUPWgL-fJK0hhwaPBvBZ5gnrNVDRGFetg811GCKTXs, time:    27.8322ms
+2026/05/06 16:05:18.263851 task.go:81: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:07:24.198573 task.go:81: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:07:24.201236 node.go:86: [Info] Returning node id: 3
+2026/05/06 16:07:24.202622 bill.go:106: [Error] Error updating task %!w(*pgconn.PrepareError=&{0xc0001f2400 false})
+[127.0.0.1]:52115 status:400 - POST reqId: _YK2SsID3DWMLO7eMIlopE3moFYnzRSjVSqFULvnLDc, time:    20.6101ms
+2026/05/06 16:07:49.881775 task.go:81: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:07:49.887020 node.go:86: [Info] Returning node id: 3
+2026/05/06 16:07:49.888264 bill.go:106: [Error] Error updating task %!w(*pgconn.PgError=&{ERROR ERROR 22P02 invalid input syntax for type integer: "535d5179-f97a-48b8-86fe-03c28c01350a"   0 0  unnamed portal parameter $1 = '...'      numutils.c 619 pg_strtoint32_safe})
+[127.0.0.1]:50218 status:400 - POST reqId: hwyxB4LfrIeGpP57CAea-cOKCW3_TLM_7UHAThUq5-Y, time:    33.4192ms
+2026/05/06 16:09:17.185873 task.go:81: [Info] Returning task id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:09:17.190939 node.go:86: [Info] Returning node id: 3
+2026/05/06 16:09:17.192059 task.go:97: [Info] User updated, id: 535d5179-f97a-48b8-86fe-03c28c01350a
+2026/05/06 16:09:17.196807 task_log.go:36: [Info] TaskLog created, id:b5ea206c-a7c9-4aad-b80f-cb7e4c5d70e1
+[127.0.0.1]:58727 status:200 - POST reqId: 5pOmhlaOzjz0E1Maw9JwjAGQODhK7E5EupLPyM-NAKk, time:   2.2197836s
+2026/05/06 16:29:04.837550 user.go:45: [Info] User created, id:215aa6e7-21e0-4279-ba6a-48bfc6f27ca7
+2026/05/06 16:29:04.842512 otp.go:50: [Info] Otp deleted, user_id: 215aa6e7-21e0-4279-ba6a-48bfc6f27ca7
+2026/05/06 16:29:04.843697 otp.go:39: [Info] Otp created, id:1bcf3306-de7c-4fd8-84e4-f0c419a8d25a
+[127.0.0.1]:63817 status:200 - POST reqId: eycNjyFl8cDhGpS-csnW4OK6cORYpzVvHxGPGgIGStk, time:   2.4694692s
+2026/05/06 16:35:09.623741 user.go:155: [Info] Returning user email: reviewer@gmail.com
+[127.0.0.1]:62461 status:200 - POST reqId: OnCrlji-7_Kc4_Lm_GEKYYtTIHiuBj095Sl98ltHdW4, time:    16.1034ms
+[127.0.0.1]:62461 status:404 - GET reqId: XOSwsbaZKrjhPXmYj1Wm_EAJpI3sE2Jrn5Nn1BKDnnU, time:           0s
+[127.0.0.1]:62461 status:404 - GET reqId: jBmwbWNfi2bffbXio_xZifLR03_3m1Z9X7RRUL9M5bg, time:           0s
+[127.0.0.1]:62461 status:404 - GET reqId: VbzSjlK1YgHD4pUtWw65rW6SyaSVQY7LIjTWSlLsjJc, time:           0s
+2026/05/06 16:36:27.441203 task.go:145: [Info] Returning all users
+[127.0.0.1]:56778 status:200 - GET reqId: myhYYcNyXh8XZJjf6RFzQSc5H84jJtdFJiD-lqkpt_M, time:     12.993ms
+2026/05/06 16:38:46.780832 user.go:45: [Info] User created, id:ade58406-f00a-471f-9fb6-9ecebda6da0f
+2026/05/06 16:38:46.784925 otp.go:50: [Info] Otp deleted, user_id: ade58406-f00a-471f-9fb6-9ecebda6da0f
+2026/05/06 16:38:46.786162 otp.go:39: [Info] Otp created, id:b410619c-924b-44cc-a762-1b117f92e2e7
+[127.0.0.1]:57395 status:200 - POST reqId: Bx33ylVF1xRiIXCLS3bPbNhU8UySOzZkMiFwiTyevQY, time:   1.8580007s
+2026/05/06 16:39:21.982597 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:57395 status:200 - POST reqId: 6IoyfPzwfagMBS9YRZ9YnnEMO2XCgI7k2g7JeX2lGpw, time:    22.1527ms
+2026/05/06 16:39:36.646800 otp.go:50: [Info] Otp deleted, user_id: ade58406-f00a-471f-9fb6-9ecebda6da0f
+2026/05/06 16:39:36.649013 user.go:203: [Info] User updated, id: ade58406-f00a-471f-9fb6-9ecebda6da0f
+2026/05/06 16:39:36.653475 bill.go:44: [Info] Bill created, invoice:48ccd76d-09c3-40c9-a50a-8eb4cbbc4bf4
+2026/05/06 16:39:38.727370 varify_email.go:45: [Info] User activated id: ade58406-f00a-471f-9fb6-9ecebda6da0f
+[127.0.0.1]:57395 status:202 - POST reqId: 6H_RP77TX9AB_NSKPwXfmqeuItSSOilzl-zgEHGW4Uo, time:   2.0845644s
+[127.0.0.1]:57395 status:200 - POST reqId: RO50wqB-RxQ5h6faFUvK56cltEzui0at7lT-v3Woc2Q, time:   1.9855295s
+2026/05/06 16:40:46.594748 company_user.go:32: [Info] company_user created successfully
+2026/05/06 16:40:46.598394 business_plan.go:38: [Info] businessPlan created, id:f0328a7f-d0b9-4bce-809a-373fe8362f51
+2026/05/06 16:40:46.606769 task.go:42: [Info] Task created, id:59a604a3-f05d-4b74-98da-50cd8a01aaf0
+2026/05/06 16:40:46.611002 task_log.go:36: [Info] TaskLog created, id:2db31dce-c2be-4dd2-a86a-caac598923a8
+2026/05/06 16:40:46.611813 bill.go:44: [Info] Bill created, invoice:b8a2409a-12e9-43d9-9987-d3f8ae89be7d
+2026/05/06 16:40:49.041979 business_plan.go:75: [Info] Business plan was submited id: f0328a7f-d0b9-4bce-809a-373fe8362f51
+[127.0.0.1]:57395 status:202 - POST reqId: Dq1n_QnrDPXcnu64wAhmRuYpyd9uvoQaczF9sFEMbjM, time:   2.4533213s
+[127.0.0.1]:57395 status:200 - POST reqId: TgeTupJD3aApNj-37QnkbPpNj99TZRbyQ0vnXU2KAGE, time:   1.8349567s
+2026/05/06 16:42:45.156139 task.go:82: [Info] Returning task id: 59a604a3-f05d-4b74-98da-50cd8a01aaf0
+2026/05/06 16:42:45.156646 node.go:86: [Info] Returning node id: 3
+2026/05/06 16:42:45.157855 task.go:98: [Info] User updated, id: 59a604a3-f05d-4b74-98da-50cd8a01aaf0
+2026/05/06 16:42:45.160327 task_log.go:36: [Info] TaskLog created, id:789e245d-07f0-4e2d-8f2b-58a773cd049a
+[127.0.0.1]:54960 status:200 - POST reqId: O9p1RNbudfaWIRPRoAtOWIksFzGytOSIjOpmfj8PMto, time:   4.4167469s
+2026/05/06 16:43:23.434211 task.go:145: [Info] Returning all users
+[127.0.0.1]:54960 status:200 - GET reqId: g0aDZvfJDOr4bfu72phHRzXQeJQKqm--iC9ZptuHPmA, time:     2.1677ms
