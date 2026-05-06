@@ -21,7 +21,7 @@ func MakeAndSendBill(user_Id, user_email string) error {
 	if err != nil {
 		return fmt.Errorf("Error making bill %w", err)
 	}
-	err = email.SendMail(user_email, "Application fee", fmt.Sprintf("Please pay %s till %s \n invoice: %s", bill.Amount, bill.Deadline, invoice))
+	err = email.SendMail(user_email, "Bob","Application fee", fmt.Sprintf("Please pay %s till %s \n invoice: %s", bill.Amount, bill.Deadline, invoice))
 	if err != nil {
 		return fmt.Errorf("error sending bill %w", err)
 	}
@@ -37,7 +37,7 @@ func MakeAndSendTaskBill(user_Id, user_email string) error {
 	if err != nil {
 		return fmt.Errorf("Error making bill %w", err)
 	}
-	err = email.SendMail(user_email, "Tusk submission fee", fmt.Sprintf("Please pay %s till %s \nInvoice: %s", bill.Amount, bill.Deadline, invoice))
+	err = email.SendMail(user_email, "Bob","Task submission fee", fmt.Sprintf("Please pay %s till %s \nInvoice: %s", bill.Amount, bill.Deadline, invoice))
 	if err != nil {
 		return fmt.Errorf("error sending bill %w", err)
 	}
@@ -56,7 +56,7 @@ func PayBill(ctx fiber.Ctx) error {
 		log.Errorf("Error paying bill %w", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
-	if err:= email.SendMail(ctx.Locals("email").(string),"Profile activated","Your profile was activated. Now you can submit your business plan for review");err!=nil {
+	if err:= email.SendMail(ctx.Locals("email").(string),"Bob","Profile activated","Your profile was activated. Now you can submit your business plan for review");err!=nil {
 		log.Errorf("Error sending email %w", err)
 		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
 	}

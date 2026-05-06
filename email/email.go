@@ -1,26 +1,53 @@
 package email
 
 import (
+	"bytes"
+
+	"html/template"
 	"net/smtp"
 	"os"
+
+	"github.com/gofiber/fiber/v3/log"
 )
 
-func SendMail(to, subject, content string) error {
+type emailData struct {
+	Name    string
+	Message string
+}
+
+func SendMail(to, name, subject, content string) error {
 	from := os.Getenv("EMAIL")
 	password := os.Getenv("EMAIL_PASSWORD")
 	smtpHost := "smtp.gmail.com"
 	smtpPort := "587"
 
-	msg := []byte(
-		"From: " + from + "\r\n" +
-			"To: " + to + "\r\n" +
-			"Subject: " + subject + "\r\n" +
-			"MIME-Version: 1.0\r\n" +
-			"Content-Type: text/plain; charset=\"UTF-8\"\r\n" +
-			"\r\n" + content,
-	)
+	// to := []string{"umarhonsultanov53@gmail.com"}
+	data := emailData{
+		Name:    name,
+		Message: content,
+	}
+
+	tmpl, err := template.ParseFiles("index.html")
+	if err != nil {
+		log.Error("Error parsing html", err)
+		return err
+	}
+
+	var body bytes.Buffer
+	if err := tmpl.Execute(&body, data); err != nil {
+		log.Error("Error executing html", err)
+		return err
+	}
+	subject = "Subject: " + subject + "\r\n"
+	mime := "MIME-version: 1.0;\r\nContent-Type: text/html; charset=\"UTF-8\";\r\n\r\n"
+	message := []byte(subject + mime + body.String())
 
 	auth := smtp.PlainAuth("", from, password, smtpHost)
 
-	return smtp.SendMail(smtpHost+":"+smtpPort, auth, from, []string{to}, msg)
+	err = smtp.SendMail(smtpHost+":"+smtpPort, auth, from, []string{to}, message)
+	if err != nil {
+		log.Error("Error sending message", err)
+		return err
+	}
+	return nil
 }

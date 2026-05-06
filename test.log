@@ -475,3 +475,107 @@ Key: 'InputUser.Password' Error:Field validation for 'Password' failed on the 'r
 2026/05/06 12:45:12.414184 bill.go:44: [Info] Bill created, invoice:7f9a6a7d-e020-484c-a182-222309a05968
 2026/05/06 12:45:14.333158 business_plan.go:75: [Info] Business plan was submited id: 13f5e27d-c387-4966-9694-11960f5a3ca2
 [127.0.0.1]:65499 status:202 - POST reqId: sZbNi8E53J747FuOpvuJPFT-uJ0y25ciVQFG6rHR2w8, time:   1.9382255s
+2026/05/06 12:52:53.862324 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:52:53.865470 business_plan.go:38: [Info] businessPlan created, id:6b75f5d8-2408-4474-a224-cdf636f12830
+2026/05/06 12:52:53.871313 task.go:39: [Info] Task created, id:ae810226-fbd4-4109-b530-22ea035c3b12
+2026/05/06 12:52:53.876994 task_log.go:36: [Info] TaskLog created, id:d6e2a737-0b59-4f38-9788-552adc6d62a8
+2026/05/06 12:52:53.879788 business_plan.go:70: [Error] Error creating billError making bill ERROR: duplicate key value violates unique constraint "bill_user_id_key" (SQLSTATE 23505)
+[127.0.0.1]:55203 status:500 - POST reqId: 38NsjoPskr3v4x5zDvIKAG_IYifhtcKD36L-JEUrZiQ, time:    26.8876ms
+2026/05/06 12:52:55.418005 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:52:55.419483 business_plan.go:38: [Info] businessPlan created, id:7ae84b75-b588-4d6f-97fe-08c6bd0d5864
+2026/05/06 12:52:55.419958 task.go:39: [Info] Task created, id:7212b397-45b7-463a-94a3-babdbe1dacb1
+2026/05/06 12:52:55.421678 task_log.go:36: [Info] TaskLog created, id:689700a2-bc17-481f-9855-f89b22084fa7
+2026/05/06 12:52:55.423284 business_plan.go:70: [Error] Error creating billError making bill ERROR: duplicate key value violates unique constraint "bill_user_id_key" (SQLSTATE 23505)
+[127.0.0.1]:55203 status:500 - POST reqId: 9LBtqY2wpU1aCivytAdUmfm3_tr6YhuwqCXiV3c_Vy8, time:     9.3037ms
+2026/05/06 12:56:07.859654 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:56:07.863750 business_plan.go:38: [Info] businessPlan created, id:944963d3-feee-459c-96b2-ca250c9a83cb
+2026/05/06 12:56:07.870546 task.go:39: [Info] Task created, id:1329b34f-eba6-4878-85ab-9b4341521bde
+2026/05/06 12:56:07.872472 task_log.go:36: [Info] TaskLog created, id:fbc2e24e-3005-4ff7-b3ea-e6ea5d49c41d
+2026/05/06 12:56:07.875204 bill.go:44: [Info] Bill created, invoice:5abd070a-db5e-4515-a729-1c95e14daff7
+2026/05/06 12:56:10.255916 business_plan.go:75: [Info] Business plan was submited id: 944963d3-feee-459c-96b2-ca250c9a83cb
+[127.0.0.1]:54460 status:202 - POST reqId: Xr2naEgKeukq7qklO-hmU7WEh9s7AcgeZNbQyeFGvKI, time:   2.4065885s
+2026/05/06 13:49:25.768464 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:49:25.770584 business_plan.go:38: [Info] businessPlan created, id:26d335b2-a97f-46b2-b467-7aeb3d413ffa
+2026/05/06 13:49:25.773805 task.go:39: [Info] Task created, id:6e313f78-fcca-4784-ba6d-24f20e7ebd0e
+2026/05/06 13:49:25.777177 task_log.go:36: [Info] TaskLog created, id:65a84af9-9c73-4e87-bf0c-e17e6a3b5245
+2026/05/06 13:49:25.778955 bill.go:44: [Info] Bill created, invoice:c2f2b416-1f14-4858-9602-b98486c1597d
+2026/05/06 13:49:25.778955 email.go:51: [Error] Error parsing htmlopen index.html: The system cannot find the file specified.
+2026/05/06 13:49:25.778955 business_plan.go:70: [Error] Error creating billerror sending bill open index.html: The system cannot find the file specified.
+[127.0.0.1]:63316 status:500 - POST reqId: 1EzJYzVxYea5a4msbbFDcXw6_2wNLyhUR-U1FFmudxU, time:    22.0514ms
+2026/05/06 13:49:42.407052 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:49:42.408237 business_plan.go:38: [Info] businessPlan created, id:0237c72a-6a56-49c2-a472-85abc912aacd
+2026/05/06 13:49:42.410082 task.go:39: [Info] Task created, id:94f5aaee-8efd-4bd3-b1c0-1a7297382dc0
+2026/05/06 13:49:42.411386 task_log.go:36: [Info] TaskLog created, id:0fd8d161-a036-457d-9860-b729e6504705
+2026/05/06 13:49:42.411898 bill.go:44: [Info] Bill created, invoice:b809890d-e119-4c72-a794-7bfb3b345969
+2026/05/06 13:49:44.488226 business_plan.go:75: [Info] Business plan was submited id: 0237c72a-6a56-49c2-a472-85abc912aacd
+[127.0.0.1]:63316 status:202 - POST reqId: l5D6g36HeQp2QPj6O6cPtJlxJ_5qg3N1znp1ZuGYzMw, time:   2.0837816s
+2026/05/06 13:51:53.950394 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:51:53.952951 business_plan.go:38: [Info] businessPlan created, id:ce04b0cc-1adc-4fde-ab04-936868bda05a
+2026/05/06 13:51:53.957377 task.go:39: [Info] Task created, id:63129c1e-48f2-4f65-9274-7d97b4fba4e6
+2026/05/06 13:51:53.961179 task_log.go:36: [Info] TaskLog created, id:9bfe2748-7d70-4d40-9dab-b851b226db89
+2026/05/06 13:51:53.962603 bill.go:44: [Info] Bill created, invoice:326ed690-f303-48e3-84e7-1ab31ea34834
+2026/05/06 13:51:56.363668 business_plan.go:75: [Info] Business plan was submited id: ce04b0cc-1adc-4fde-ab04-936868bda05a
+[127.0.0.1]:63231 status:202 - POST reqId: y23SMnDUQe6V5Bo4YcQOQPJ_YuryeNTbqSIw2d4Jx2k, time:   2.4223277s
+2026/05/06 13:52:35.137481 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:52:35.140848 business_plan.go:38: [Info] businessPlan created, id:eacafe70-2ace-4023-9fbd-e6a66033f454
+2026/05/06 13:52:35.147564 task.go:39: [Info] Task created, id:3c6b02ff-ed61-4b73-98a8-bf4e3fe7aeb6
+2026/05/06 13:52:35.151027 task_log.go:36: [Info] TaskLog created, id:b6990657-2a1f-4a56-bf7f-4934e4f3edd2
+2026/05/06 13:52:35.154487 bill.go:44: [Info] Bill created, invoice:0ad69210-ba52-45f6-961f-3f1ed3b52f45
+2026/05/06 13:52:38.025887 business_plan.go:75: [Info] Business plan was submited id: eacafe70-2ace-4023-9fbd-e6a66033f454
+[127.0.0.1]:54381 status:202 - POST reqId: xDoKDvH7uN08SnH9Fzqwj3tIrM1bTsI8zqiqvFj1HrI, time:   2.8999572s
+2026/05/06 13:52:58.512614 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:52:58.515277 business_plan.go:38: [Info] businessPlan created, id:a8ea5815-36b1-451d-95ff-521daf4fb1fe
+2026/05/06 13:52:58.516814 task.go:39: [Info] Task created, id:e0f5a067-c1bb-4c07-95ec-34b0bf7115fd
+2026/05/06 13:52:58.522032 task_log.go:36: [Info] TaskLog created, id:185dd49a-c837-421a-8121-fe7d469a267a
+2026/05/06 13:52:58.523755 bill.go:44: [Info] Bill created, invoice:f0803955-5884-49a8-afab-ecc98ebcf897
+2026/05/06 13:53:00.457509 business_plan.go:75: [Info] Business plan was submited id: a8ea5815-36b1-451d-95ff-521daf4fb1fe
+[127.0.0.1]:55110 status:202 - POST reqId: rAlSG9kAOHuuK6xKfqOPT67rJp_oXh4kCsoY3uiZqEE, time:   1.9549468s
+2026/05/06 13:53:42.259212 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:53:42.261517 business_plan.go:38: [Info] businessPlan created, id:061b77c1-8b13-46d9-aaee-1f6d4ba9aaaf
+2026/05/06 13:53:42.264686 task.go:39: [Info] Task created, id:d526872f-bbf8-459c-9a78-07fc055053fe
+2026/05/06 13:53:42.266966 task_log.go:36: [Info] TaskLog created, id:6bf68011-0675-4dd6-81a4-34cc10c8f394
+2026/05/06 13:53:42.268887 bill.go:44: [Info] Bill created, invoice:a7f4ef32-02bd-405a-a544-02abb175573f
+2026/05/06 13:53:45.532314 business_plan.go:75: [Info] Business plan was submited id: 061b77c1-8b13-46d9-aaee-1f6d4ba9aaaf
+[127.0.0.1]:51982 status:202 - POST reqId: AQ9yupdmS6b_RD343USFrMReGSHuRWRE0upITwn936o, time:   3.2817115s
+2026/05/06 13:54:08.774706 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:54:08.776224 business_plan.go:38: [Info] businessPlan created, id:36992976-0f88-45a3-a0fe-8c96af1fb888
+2026/05/06 13:54:08.781368 task.go:39: [Info] Task created, id:291c9c78-9c8f-46dd-bf5f-e0911d16cd1a
+2026/05/06 13:54:08.785927 task_log.go:36: [Info] TaskLog created, id:177d96f7-4f31-43ed-bd1c-91ec50d0a14f
+2026/05/06 13:54:08.789171 bill.go:44: [Info] Bill created, invoice:db4f2c28-8df2-4c78-bafe-1c0cab3ba234
+2026/05/06 13:54:11.168080 business_plan.go:75: [Info] Business plan was submited id: 36992976-0f88-45a3-a0fe-8c96af1fb888
+[127.0.0.1]:62323 status:202 - POST reqId: pSWuHpjC8wnLzyrHA5h5tQraMFFwT4wQoxVicJL9neg, time:    2.402101s
+2026/05/06 13:55:19.003817 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:55:19.007127 business_plan.go:38: [Info] businessPlan created, id:6677c22f-9d70-4b59-8ded-db97919fa4bc
+2026/05/06 13:55:19.013359 task.go:39: [Info] Task created, id:e631bead-00b7-4175-ac7e-48f47f9d6f93
+2026/05/06 13:55:19.017049 task_log.go:36: [Info] TaskLog created, id:016fb80e-60a6-4c0c-8636-7f56e8c27e48
+2026/05/06 13:55:19.020585 bill.go:44: [Info] Bill created, invoice:b19fc6fa-82a5-476c-b758-01d48fa46b47
+2026/05/06 13:55:20.972357 business_plan.go:75: [Info] Business plan was submited id: 6677c22f-9d70-4b59-8ded-db97919fa4bc
+[127.0.0.1]:63836 status:202 - POST reqId: AatavJmMByH4e7JxGwu9aVaczvDYyu34dKLu5QZqJhE, time:   1.9815023s
+2026/05/06 13:56:00.213709 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:56:00.218163 business_plan.go:38: [Info] businessPlan created, id:7dff69b6-b81e-428a-babe-d08e0859f317
+2026/05/06 13:56:00.225481 task.go:39: [Info] Task created, id:94d8e37d-22e8-4a8e-b26a-678692e1d796
+2026/05/06 13:56:00.230221 task_log.go:36: [Info] TaskLog created, id:a3ac52e6-0392-43d9-91ae-45e0579a6944
+2026/05/06 13:56:00.231834 bill.go:44: [Info] Bill created, invoice:b887ea9b-93bc-48f3-a5cb-ce72bea215ff
+2026/05/06 13:56:02.670429 business_plan.go:75: [Info] Business plan was submited id: 7dff69b6-b81e-428a-babe-d08e0859f317
+[127.0.0.1]:64680 status:202 - POST reqId: bSTZ84bwTwfR2_rNQmyquOK2_dam-StlImtYUCQuV9E, time:   2.4675551s
+2026/05/06 13:57:19.816025 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:57:19.818838 business_plan.go:38: [Info] businessPlan created, id:b6a045ae-278e-48e0-ab9c-0c00150d0e09
+2026/05/06 13:57:19.825039 task.go:39: [Info] Task created, id:a9e16de1-b8e4-436e-81a9-5386f4160d6a
+2026/05/06 13:57:19.828120 task_log.go:36: [Info] TaskLog created, id:df323ae0-302e-4b90-8a2e-7433841c590e
+2026/05/06 13:57:19.829373 bill.go:44: [Info] Bill created, invoice:f1c3b623-574e-4579-a14c-188002d14ea9
+2026/05/06 13:57:21.761569 business_plan.go:75: [Info] Business plan was submited id: b6a045ae-278e-48e0-ab9c-0c00150d0e09
+[127.0.0.1]:51403 status:202 - POST reqId: NsQHELwtdOoj5nH_XtLseoaCk2tKzSmNNRCGaLCbupE, time:   1.9586685s
+2026/05/06 13:58:27.861351 company_user.go:32: [Info] company_user created successfully
+2026/05/06 13:58:27.864499 business_plan.go:38: [Info] businessPlan created, id:91476c75-a1b5-4966-bc5f-fd4ae879eaa9
+2026/05/06 13:58:27.869431 task.go:39: [Info] Task created, id:09a0ac7f-c603-4695-8b7b-7c200b766470
+2026/05/06 13:58:27.872798 task_log.go:36: [Info] TaskLog created, id:45310ec4-2510-47ab-b009-f20b3a3e6ce5
+2026/05/06 13:58:27.875224 bill.go:44: [Info] Bill created, invoice:57d5723f-845b-48ea-a84f-789150c99f24
+2026/05/06 13:58:30.328794 business_plan.go:75: [Info] Business plan was submited id: 91476c75-a1b5-4966-bc5f-fd4ae879eaa9
+[127.0.0.1]:55335 status:202 - POST reqId: hHxwz3KaGexWrqAxryM5eDm0VL6QCr1rgN_lYo4qldU, time:   2.4796285s
+2026/05/06 14:00:37.622266 company_user.go:32: [Info] company_user created successfully
+2026/05/06 14:00:37.626317 business_plan.go:38: [Info] businessPlan created, id:3ab85af0-b2c1-40b2-a4f4-f59f7e98e5c1
+2026/05/06 14:00:37.632374 task.go:39: [Info] Task created, id:5b8adc78-6108-4e8f-97e8-0cdc844c73c6
+2026/05/06 14:00:37.637112 task_log.go:36: [Info] TaskLog created, id:f8227217-4fde-431a-9c98-18ebdce4a99d
+2026/05/06 14:00:37.637788 bill.go:44: [Info] Bill created, invoice:33b61ec9-c154-4f72-8cd1-9721a357c2cb
+2026/05/06 14:00:41.046215 business_plan.go:75: [Info] Business plan was submited id: 3ab85af0-b2c1-40b2-a4f4-f59f7e98e5c1
+[127.0.0.1]:65393 status:202 - POST reqId: 3X33xg-7wzZltxdL1rTcIuBAyAGW6pLrKRlaNuarYjg, time:   3.4388046s
