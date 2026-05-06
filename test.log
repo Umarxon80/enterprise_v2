@@ -692,3 +692,92 @@ Key: 'InputUser.Password' Error:Field validation for 'Password' failed on the 'r
 [127.0.0.1]:54960 status:200 - POST reqId: O9p1RNbudfaWIRPRoAtOWIksFzGytOSIjOpmfj8PMto, time:   4.4167469s
 2026/05/06 16:43:23.434211 task.go:145: [Info] Returning all users
 [127.0.0.1]:54960 status:200 - GET reqId: g0aDZvfJDOr4bfu72phHRzXQeJQKqm--iC9ZptuHPmA, time:     2.1677ms
+2026/05/06 17:35:02.727911 user.go:57: [Error] Error creating user ERROR: duplicate key value violates unique constraint "user_email_key" (SQLSTATE 23505)
+[127.0.0.1]:57695 status:400 - POST reqId: Ep0RbyxGmWd0OuSWcctCxY33pD1Ly9QH1vtLvMqyAKE, time:    29.4019ms
+2026/05/06 17:35:56.243184 user.go:45: [Info] User created, id:d33bd519-0dbc-4847-b5a1-8cb36ec026df
+2026/05/06 17:35:56.245924 otp.go:50: [Info] Otp deleted, user_id: d33bd519-0dbc-4847-b5a1-8cb36ec026df
+2026/05/06 17:35:56.247867 otp.go:39: [Info] Otp created, id:3b9c1832-e868-41fc-abd3-539ce4c2af23
+[127.0.0.1]:57695 status:200 - POST reqId: haBPAj9OrRB2Ma4s-74BRtZ9nmX1l91-dDlOVsbkVFc, time:   2.4578241s
+2026/05/06 17:36:12.198655 varify_email.go:14: [Error] Wrong input
+[127.0.0.1]:60608 status:404 - GET reqId: z76mPlkl09K3JWjByBi5K2QX6hYvAW85A8MCQnFQmvc, time:           0s
+[127.0.0.1]:60608 status:404 - GET reqId: Fhb3tMB5Apu7MaH4v5Dc165ZbmhZZoyRPtkirI_Nfxo, time:           0s
+2026/05/06 17:36:36.811200 otp.go:50: [Info] Otp deleted, user_id: d33bd519-0dbc-4847-b5a1-8cb36ec026df
+2026/05/06 17:36:36.814393 user.go:203: [Info] User updated, id: d33bd519-0dbc-4847-b5a1-8cb36ec026df
+2026/05/06 17:36:36.815115 varify_email.go:32: [Info] User activated id: d33bd519-0dbc-4847-b5a1-8cb36ec026df
+[127.0.0.1]:63629 status:202 - GET reqId: Hb9ejaK_FfiabMumj37-2TlhVeiFWeUgMPYPmxaDznc, time:    11.0481ms
+2026/05/06 17:37:02.262064 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/06 17:37:02.262064 varify_email.go:16: [Error] Wrong input
+[127.0.0.1]:63629 status:404 - GET reqId: RYNH-2MYlwZ2ZMjo-494Aan_jgRgCNYhJCFVHI61EXM, time:      673.5µs
+2026/05/06 17:37:03.928114 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/06 17:37:03.928431 varify_email.go:16: [Error] Wrong input
+[127.0.0.1]:63629 status:404 - GET reqId: nyUunyXsgjJcVQ0wSau1dRhsr0hhlxa0uqpFZpPijj8, time:     2.8456ms
+2026/05/06 17:37:04.155523 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/06 17:37:04.156449 varify_email.go:16: [Error] Wrong input
+[127.0.0.1]:63629 status:404 - GET reqId: 9dxicz6IEg6RRnwqHLc80m_52nddTJXQNb2bimI8HsA, time:      1.565ms
+2026/05/06 17:37:05.830467 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/06 17:37:05.830467 varify_email.go:16: [Error] Wrong input
+[127.0.0.1]:63629 status:404 - GET reqId: Z0Buf1pbSmTbm6C9obORdSSoCn1i3NMBbarowbHMvPM, time:        685µs
+2026/05/06 17:39:49.281713 user.go:45: [Info] User created, id:e83b4270-8784-47fc-9ff7-463435da5abc
+2026/05/06 17:39:49.285604 otp.go:50: [Info] Otp deleted, user_id: e83b4270-8784-47fc-9ff7-463435da5abc
+2026/05/06 17:39:49.288263 otp.go:39: [Info] Otp created, id:6c503186-3aa4-408b-9b0b-ad5fd3e75a2a
+[127.0.0.1]:58830 status:200 - POST reqId: g3BjSpijyMeP2q5IlYMs2HNb3-VBdjpe0in78_g-dl0, time:   3.1552105s
+2026/05/06 17:41:11.860954 user.go:45: [Info] User created, id:60a0c9f4-290e-4d22-b9cd-075b09a51665
+2026/05/06 17:41:11.864059 otp.go:50: [Info] Otp deleted, user_id: 60a0c9f4-290e-4d22-b9cd-075b09a51665
+2026/05/06 17:41:11.864575 otp.go:39: [Info] Otp created, id:e14b4f54-0f19-4d0c-a699-9611e2f4ecc6
+[127.0.0.1]:50985 status:200 - POST reqId: tzlXOGebuCoRoPd-JlAiI_oS0MjdNQOzvyJWTEitrjs, time:    2.405172s
+2026/05/06 17:45:24.775256 user.go:45: [Info] User created, id:585108e6-ff84-44bf-83a0-ae8053cae012
+2026/05/06 17:45:24.778740 otp.go:50: [Info] Otp deleted, user_id: 585108e6-ff84-44bf-83a0-ae8053cae012
+2026/05/06 17:45:24.780870 otp.go:39: [Info] Otp created, id:936db77f-779b-4cec-a28a-e2ddb55f8b20
+[127.0.0.1]:52786 status:200 - POST reqId: LkMoToN4dZexkyBhy_8qlXxjm071Ns66TyUs1h41CQA, time:   2.8055881s
+2026/05/06 17:46:12.429248 user.go:57: [Error] Error creating user ERROR: duplicate key value violates unique constraint "user_email_key" (SQLSTATE 23505)
+[127.0.0.1]:57518 status:400 - POST reqId: TANLfDilr2ZlfYQjwzTkLZ4rtll7DMMIvryzDj4DE8U, time:    13.9225ms
+2026/05/06 17:46:21.485124 user.go:45: [Info] User created, id:6adb7e85-720f-4c4f-a99f-fae7b20946aa
+2026/05/06 17:46:21.489051 otp.go:50: [Info] Otp deleted, user_id: 6adb7e85-720f-4c4f-a99f-fae7b20946aa
+2026/05/06 17:46:21.490103 otp.go:39: [Info] Otp created, id:0a9b8cea-56eb-42f1-bf2b-9914475500d1
+[127.0.0.1]:57518 status:200 - POST reqId: K6p0Or3503I0jHWPb8phOO_dZwZO6J6ffLsIs1__ols, time:    1.926663s
+2026/05/06 17:48:48.465608 user.go:45: [Info] User created, id:ef299a6a-ae9a-4cb8-a80d-887cc200298c
+2026/05/06 17:48:48.469798 otp.go:50: [Info] Otp deleted, user_id: ef299a6a-ae9a-4cb8-a80d-887cc200298c
+2026/05/06 17:48:48.471482 otp.go:39: [Info] Otp created, id:f0b81e84-0cac-4d0f-a453-c8ed03175c93
+[127.0.0.1]:60342 status:200 - POST reqId: auHbcaCvVKQEfXGIv0MSmjVdgulK1CYAPhshcQQlZ1U, time:   1.8847288s
+2026/05/06 17:54:41.723286 user.go:45: [Info] User created, id:c9b70c91-b9be-4e78-9c0e-086d555dd4ef
+2026/05/06 17:54:41.725495 otp.go:50: [Info] Otp deleted, user_id: c9b70c91-b9be-4e78-9c0e-086d555dd4ef
+2026/05/06 17:54:41.727190 otp.go:39: [Info] Otp created, id:991ecacb-5340-4611-abbe-7fe4c9e4714a
+[127.0.0.1]:53186 status:200 - POST reqId: QWJh0cA6jEx_Zx_ZtWgfZPe0p7aZMKbJ0gYxBbBtC60, time:   3.4196817s
+2026/05/06 17:55:17.828889 user.go:45: [Info] User created, id:96e9bf67-586c-4c41-8bf7-847b26d13ec2
+2026/05/06 17:55:17.833647 otp.go:50: [Info] Otp deleted, user_id: 96e9bf67-586c-4c41-8bf7-847b26d13ec2
+2026/05/06 17:55:17.835703 otp.go:39: [Info] Otp created, id:d2ca3be6-4eb1-40bd-aa12-e0389cb4b8b9
+[127.0.0.1]:54501 status:200 - POST reqId: 0pgLovxAXHOGxpqYwAzbAryCroCoF1p1MVvoIKN1AwQ, time:   2.1493769s
+2026/05/06 17:56:36.552436 user.go:45: [Info] User created, id:bf115a7a-1a8b-4b33-b5ff-ee8834279e78
+2026/05/06 17:56:36.557951 otp.go:50: [Info] Otp deleted, user_id: bf115a7a-1a8b-4b33-b5ff-ee8834279e78
+2026/05/06 17:56:36.559546 otp.go:39: [Info] Otp created, id:c11fedcc-94f0-4442-b9d2-d1b055bf536b
+[127.0.0.1]:54970 status:200 - POST reqId: tFtxlYf2SxhCLbDCzxUnTHyfXnotx1vT2Ka2AMqaObY, time:   3.5461313s
+2026/05/06 17:56:57.299659 otp.go:50: [Info] Otp deleted, user_id: bf115a7a-1a8b-4b33-b5ff-ee8834279e78
+2026/05/06 17:56:57.301955 user.go:203: [Info] User updated, id: bf115a7a-1a8b-4b33-b5ff-ee8834279e78
+2026/05/06 17:56:57.301955 varify_email.go:32: [Info] User activated id: bf115a7a-1a8b-4b33-b5ff-ee8834279e78
+[127.0.0.1]:56253 status:202 - GET reqId: yLVkOJEXVa83i5Qw0AYkAXl08gvkj9agbJ2J8zQBrMU, time:     6.6217ms
+2026/05/06 17:57:52.872045 user.go:45: [Info] User created, id:6ed60f98-f532-4fa2-a6ec-a12c0721cbb5
+2026/05/06 17:57:52.876129 otp.go:50: [Info] Otp deleted, user_id: 6ed60f98-f532-4fa2-a6ec-a12c0721cbb5
+2026/05/06 17:57:52.877086 otp.go:39: [Info] Otp created, id:18a06f6f-84ae-4409-b56b-1bbc018ee0e3
+[127.0.0.1]:60788 status:200 - POST reqId: JM2i3Jpp1mnpdIyj7onaKeBDObIMNCYSCai0u6eah4Q, time:    4.694931s
+2026/05/06 17:59:09.927091 user.go:45: [Info] User created, id:7a0fee4c-f095-4fd4-8c2d-bfc1f4ee46d2
+2026/05/06 17:59:09.931652 otp.go:50: [Info] Otp deleted, user_id: 7a0fee4c-f095-4fd4-8c2d-bfc1f4ee46d2
+2026/05/06 17:59:09.933756 otp.go:39: [Info] Otp created, id:eaf31a99-2d54-47e4-aa33-1451a1aa25d9
+[127.0.0.1]:62420 status:200 - POST reqId: ZDkMYNaU-Dwb7b3Xl1UPmIfpL_23Zhllxa-6IW1YWyg, time:   2.2524025s
+2026/05/06 18:00:32.001526 user.go:45: [Info] User created, id:60f7320c-c12f-41d0-9c72-458440694ba5
+2026/05/06 18:00:32.007137 otp.go:50: [Info] Otp deleted, user_id: 60f7320c-c12f-41d0-9c72-458440694ba5
+2026/05/06 18:00:32.008796 otp.go:39: [Info] Otp created, id:d8d38a08-1d90-451b-aedf-cceafbcc247c
+[127.0.0.1]:61328 status:200 - POST reqId: 8anV2T7ov_ePHVLNMxQFOeT2TkKgW3yU-8HM-7AR1r4, time:   2.9086456s
+2026/05/06 18:03:44.969763 user.go:45: [Info] User created, id:3d6c043d-8260-4dd2-be24-9e3bc8364090
+2026/05/06 18:03:44.973533 otp.go:50: [Info] Otp deleted, user_id: 3d6c043d-8260-4dd2-be24-9e3bc8364090
+2026/05/06 18:03:44.974601 otp.go:39: [Info] Otp created, id:deaf2923-afba-49db-85df-df102257d98f
+[127.0.0.1]:61128 status:200 - POST reqId: GeZtJi0-HONcJhDeiIUBZNc272clpgWwIJ9g8QR7fLo, time:   2.8807872s
+2026/05/06 18:04:28.812665 otp.go:50: [Info] Otp deleted, user_id: 3d6c043d-8260-4dd2-be24-9e3bc8364090
+2026/05/06 18:04:28.819513 user.go:203: [Info] User updated, id: 3d6c043d-8260-4dd2-be24-9e3bc8364090
+2026/05/06 18:04:28.819513 varify_email.go:32: [Info] User activated id: 3d6c043d-8260-4dd2-be24-9e3bc8364090
+[127.0.0.1]:50269 status:202 - GET reqId: 1-2PavngYHH92Pn2tIa2BLCTPOTW60HdpTwACyQYNFo, time:    13.0897ms
+2026/05/06 18:04:39.200722 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/06 18:04:39.200722 varify_email.go:16: [Error] Wrong input
+[127.0.0.1]:50269 status:404 - GET reqId: w2G5IDpll_V49Cwt4g5TBm-rPvB1MMF4o7ImIssqsOk, time:     4.1945ms
+2026/05/06 18:09:04.909622 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/06 18:09:04.909622 varify_email.go:16: [Error] Wrong input
+[127.0.0.1]:55293 status:404 - GET reqId: HM0wX9m9__fDQ8PBdExB6Zbe-u_NKnXc7_0kwF1ZM-Y, time:     1.0989ms

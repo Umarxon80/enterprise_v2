@@ -26,7 +26,7 @@ func MakeAndSendOtp(user_id string,user_email string)(error){
 	if err:=db.CreateOtp(otp);err!=nil{
 		return fmt.Errorf("Error creating otp %w",err)
 	}
-	if err:=email.SendMail(user_email,"Bob","Email verification",fmt.Sprintf("Your email varification otp %s",otp.Code));err!=nil {
+	if err:=email.SendOtp(user_email,"Bob","Email verification","Your email was registered on enterprise.us. If it was you please click botton below and varify your email ","http://localhost:8080/verify_email/"+otp.Code);err!=nil {
 		return fmt.Errorf("Error sending otp %w",err)
 	}
 	return nil

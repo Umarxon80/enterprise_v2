@@ -100,7 +100,7 @@ func main() {
 	userRouter.Delete("/:id",handlers.DeleteUser)
 
 	app.Post("/login", handlers.LogIn)
-	app.Post("/verify_email",middlewares.RequireAuth, handlers.VarifyEmail)
+	app.Get("/verify_email/:otp",handlers.VarifyEmail)
 	app.Post("/pay",middlewares.RequireAuth, handlers.PayBill)
 	
 	businessRouter:=app.Group("/business")

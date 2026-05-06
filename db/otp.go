@@ -51,25 +51,25 @@ func DeleteOtp(user_id string) (error) {
 	return nil
 }
 
-func CheckOtp(user_id string, code string) error {
+func CheckOtp(code string) (string,error) {
 	var otp dto.Otp
 	err := DbConnection.QueryRow(context.Background(), `
 	SELECT  user_id, code, deadline
-	FROM otp WHERE user_id=$1
-`, user_id).Scan(
+	FROM otp WHERE code=$1
+`, code).Scan(
 		&otp.UserId,
 		&otp.Code,
 		&otp.Deadline,
 	)
 	if err != nil {
 		log.Errorf("Error getting otp, %v", err)
-		return err
+		return "",err
 	}
 	if time.Now().After(otp.Deadline) {
-		return errors.New("Deadline exeeded")
+		return "",errors.New("Deadline exeeded")
 	}
 	if code != otp.Code {
-		return errors.New("Wrong OTP")
+		return "",errors.New("Wrong OTP")
 	}
-	return nil
+	return otp.UserId,nil
 }
