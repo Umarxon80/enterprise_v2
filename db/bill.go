@@ -15,7 +15,7 @@ func createBillTable() error {
 	_, err := DbConnection.Exec(context.Background(), `
 	CREATE TABLE IF NOT EXISTS bill(
 	id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-	user_id UUID REFERENCES "user"(id) UNIQUE,
+	user_id UUID REFERENCES "user"(id),
 	invoice UUID DEFAULT gen_random_uuid(),
 	deadline TIMESTAMP NOT NULL,
 	amount VARCHAR(255),
@@ -44,10 +44,28 @@ func CreateBill(bill dto.InputBill) (string,error) {
 	log.Info("Bill created, invoice:",invoice)
 	return invoice,nil
 }
+
+func CreateTaskBill(bill dto.InputBill) (string,error) {
+	var invoice string
+    
+	err := DbConnection.QueryRow(context.Background(), `
+		INSERT INTO bill (
+			user_id,deadline,amount,reason
+		) VALUES (
+			$1,$2,$3,$4
+		) RETURNING invoice 
+	`, bill.UserId,bill.Deadline,bill.Amount,"task").Scan(&invoice)
+	if err != nil {
+		return "",err
+	}
+	log.Info("Bill created, invoice:",invoice)
+	return invoice,nil
+}
+
 func DeleteBill(user_id string) (error) {
 	_, err := DbConnection.Exec(context.Background(), `
 	DELETE from bill
-	WHERE user_id=$1
+	WHERE user_id=$1 AND reason=$2
 	`, user_id)
 	if err != nil {
 		return err

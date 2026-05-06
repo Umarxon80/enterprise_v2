@@ -9,9 +9,11 @@ import (
 type body_code struct {
 	Code string `json:"code" validate:"min=6"`
 }
+
 func VarifyEmail(ctx fiber.Ctx) error {
 	user_id:=ctx.Locals("userid").(string)
 	user_email:=ctx.Locals("email").(string)
+	user_role:=ctx.Locals("role").(string)
 	var code body_code
 	if err:=ctx.Bind().JSON(&code); err!=nil{
 		log.Error("Wrong input")
@@ -35,15 +37,23 @@ func VarifyEmail(ctx fiber.Ctx) error {
 	}
 
 
-	if err:=MakeAndSendBill(user_id,user_email); err!=nil {
+	if user_role!="admin" {
+		if err:=MakeAndSendBill(user_id,user_email); err!=nil {
 		log.Error("Error making and sending bill err:" ,err.Error())
 		return ctx.Status(fiber.StatusNotFound).JSON(fiber.Map{"error": err.Error()})
-	}
-	 
-	log.Info("User activated id: ",user_id)
+		}
+		log.Info("User activated id: ",user_id)
 	return  ctx.Status(fiber.StatusAccepted).JSON(fiber.Map{
 		"message":"account activated successfully",
 		"next_actions":"please pay application fee. Invoice was sent to your account",
+		"id":user_id,
+	})
+	}
+	
+	 
+	log.Info("Admin activated id: ",user_id)
+	return  ctx.Status(fiber.StatusAccepted).JSON(fiber.Map{
+		"message":"account activated successfully",
 		"id":user_id,
 	})
 }

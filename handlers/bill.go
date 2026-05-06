@@ -27,6 +27,22 @@ func MakeAndSendBill(user_Id, user_email string) error {
 	}
 	return nil
 }
+func MakeAndSendTaskBill(user_Id, user_email string) error {
+	bill := dto.InputBill{
+		UserId:   user_Id,
+		Amount:   "500$",
+		Deadline: time.Now().Add(5 * 24 * time.Hour),
+	}
+	invoice, err := db.CreateBill(bill)
+	if err != nil {
+		return fmt.Errorf("Error making bill %w", err)
+	}
+	err = email.SendMail(user_email, "Tusk submission fee", fmt.Sprintf("Please pay %s till %s \nInvoice: %s", bill.Amount, bill.Deadline, invoice))
+	if err != nil {
+		return fmt.Errorf("error sending bill %w", err)
+	}
+	return nil
+}
 
 func PayBill(ctx fiber.Ctx) error {
 	var bill dto.OutputBill
@@ -39,6 +55,10 @@ func PayBill(ctx fiber.Ctx) error {
 	if err := db.PayBill(bill.Invoice, id); err != nil {
 		log.Errorf("Error paying bill %w", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
+	}
+	if err:= email.SendMail(ctx.Locals("email").(string),"Profile activated","Your profile was activated. Now you can submit your business plan for review");err!=nil {
+		log.Errorf("Error sending email %w", err)
+		return ctx.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": err.Error()})
 	}
 	return ctx.JSON(fiber.Map{
 		"message":"Apllicatation bill was paid successfully",

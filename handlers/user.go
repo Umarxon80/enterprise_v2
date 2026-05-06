@@ -63,7 +63,10 @@ func CreateUser(ctx fiber.Ctx) error {
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	return ctx.JSON(fiber.Map{"user created, id:": id})
+	return ctx.JSON(fiber.Map{
+		"user created, id:": id,
+		"message":"Please varify your email. OTP was sent to your email",
+	})
 }
 func PatchUser(ctx fiber.Ctx) error {
 	var user dto.InputUser

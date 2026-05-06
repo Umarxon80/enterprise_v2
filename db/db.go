@@ -33,5 +33,20 @@ func Connect() {
 	if err := createBillTable(); err != nil {
 		log.Fatalf("Error creating otp table %v", err)
 	}
+	if err := createNodeTable(); err != nil {
+		log.Fatalf("Error creating node table %v", err)
+	}
+	if err := createCompanyUserTable(); err != nil {
+		log.Fatalf("Error creating company_user table %v", err)
+	}
+	if err := createBusinessPlanTable(); err != nil {
+		log.Fatalf("Error creating business_plan table %v", err)
+	}
+	if err := createTaskTable(); err != nil {
+		log.Fatalf("Error creating task table %v", err)
+	}
+	if err := createTaskLogTable(); err != nil {
+		log.Fatalf("Error creating task_log table %v", err)
+	}
 
 }

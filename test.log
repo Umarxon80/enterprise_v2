@@ -373,3 +373,105 @@ Key: 'InputUser.Password' Error:Field validation for 'Password' failed on the 'r
 2026/05/05 17:15:46.056458 varify_email.go:43: [Info] User activated id: 185e77ea-ed97-449f-82e1-262ee533b502
 [127.0.0.1]:56191 status:202 - POST reqId: zB2Cxw0_TX64XjIHBuLwD8EI32S4FUTOBv5OjbwTGEk, time:   3.3679439s
 [127.0.0.1]:61827 status:200 - POST reqId: WUirCQ97KFqFdfq2qZA-H1FNTI3YKuqL1zRZoQTaVos, time:    10.2881ms
+2026/05/06 10:12:50.990122 require_auth.go:28: [Error] No token provided
+[127.0.0.1]:59890 status:401 - GET reqId: saDvCe1eWLrFRj8nmdsd7yW1HvoLbXVwujLdCdgr3v4, time:     3.0137ms
+2026/05/06 10:12:57.172506 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:59890 status:200 - POST reqId: rvT7Fn1FOd5HVRAoI-l9eF61fExTC4s_oOJ8X9TuQV8, time:     80.819ms
+2026/05/06 10:13:13.566064 user.go:80: [Info] Returning all users
+[127.0.0.1]:59890 status:200 - GET reqId: WCK5_9M0fOppTsrbMsGmYA5o91BKmdK1hxhxvYFFb88, time:      1.005ms
+2026/05/06 10:16:01.603466 company.go:53: [Info] Returning all companies
+[127.0.0.1]:64884 status:200 - GET reqId: w7UhLkYSIIBXWG8h_eoJ7ui7MBp1RDMzFwre5GxtwFk, time:    10.2816ms
+2026/05/06 10:16:07.571027 company.go:72: [Info] Returning company id: %!d(string=50881669-86eb-4b7b-9e15-756e95b930cb)
+[127.0.0.1]:64884 status:200 - GET reqId: FgvlilOXDTUN6bCkjXqsPZcmc8B8TvuIDuzoAljeGM4, time:      2.784ms
+2026/05/06 10:16:10.689255 company.go:25: [Error] Error getting Company, err:%!(EXTRA *pgconn.PgError=ERROR: invalid input syntax for type uuid: "50881669-86eb-4b7b-9e15-756e95b930c" (SQLSTATE 22P02))
+[127.0.0.1]:64884 status:404 - GET reqId: t4I93E4BSYmr7_a9DMclRvr8ylc9Vb3xk84y0XRup7M, time:     3.9527ms
+2026/05/06 10:18:53.293346 company.go:27: [Error] Error getting Company, err:%!(EXTRA *pgconn.PgError=ERROR: invalid input syntax for type uuid: "50881669-86eb-4b7b-9e15-756e95b930c" (SQLSTATE 22P02))
+[127.0.0.1]:53858 status:404 - GET reqId: bltj7fHSpqUGu0hvMiJ8jI11SBiGEEAW26HHVx-PKJQ, time:     1.5876ms
+2026/05/06 10:18:54.604629 company.go:27: [Error] Error getting Company, err:%!(EXTRA *pgconn.PgError=ERROR: invalid input syntax for type uuid: "50881669-86eb-4b7b-9e15-756e95b930c" (SQLSTATE 22P02))
+[127.0.0.1]:53858 status:404 - GET reqId: v2vh6OS6YSg7bsLHfimX1vT2h5lsm7hIhP8o-eUyUtI, time:     5.7569ms
+2026/05/06 10:19:10.511217 company.go:27: [Error] Error getting Company, err:%!(EXTRA *pgconn.PgError=ERROR: invalid input syntax for type uuid: "50881669-86eb-4b7b-9e15-756e95b930c" (SQLSTATE 22P02))
+2026/05/06 10:19:52.478981 company.go:26: [Error] Error getting Company, err:%!(EXTRA *pgconn.PgError=ERROR: invalid input syntax for type uuid: "50881669-86eb-4b7b-9e15-756e95b930c" (SQLSTATE 22P02))
+[127.0.0.1]:55661 status:404 - GET reqId: G2V7Y0Ia9JVMNTKq-7rJ5AHXTav58DRjQjxL9tqEDEQ, time:     2.9093ms
+2026/05/06 10:22:11.715664 company.go:26: [Error] Error getting Company, err: ERROR: invalid input syntax for type uuid: "50881669-86eb-4b7b-9e15-756e95b930c" (SQLSTATE 22P02)
+[127.0.0.1]:58033 status:500 - GET reqId: rNNvsqdJo2q1YUAb_XbVsB3X79uRj0wiOnUc6pzPjDo, time:     1.4341ms
+2026/05/06 10:23:17.241783 company.go:44: [Error] Wrong input Key: 'InputCompany.Industry' Error:Field validation for 'Industry' failed on the 'required' tag
+[127.0.0.1]:58998 status:400 - POST reqId: 4SSIgniC0kIcwYbn4MZmpz16edc2clsKqMD4awCLRAM, time:           0s
+2026/05/06 10:23:29.218036 company.go:44: [Error] Wrong input Key: 'InputCompany.Industry' Error:Field validation for 'Industry' failed on the 'min' tag
+[127.0.0.1]:58998 status:400 - POST reqId: 9FlBLxeY3m6_VHxKuFbGTiFNPgv5OUQdb6X0-VcqTIs, time:     1.0162ms
+2026/05/06 10:35:00.800473 role.go:51: [Info] Returning all companies
+[127.0.0.1]:63156 status:200 - GET reqId: oZMgEBgKeY-fz5SDhS0EMQ3M7fgLDxHVCV6cpFDMy_Y, time:     5.4284ms
+2026/05/06 10:38:51.912124 db.go:37: [Fatal] Error creating node table ERROR: syntax error at or near ")" (SQLSTATE 42601)
+2026/05/06 10:39:38.790210 db.go:37: [Fatal] Error creating node table ERROR: insert or update on table "node" violates foreign key constraint "node_next_node_id_fkey" (SQLSTATE 23503)
+2026/05/06 10:42:45.386347 db.go:37: [Fatal] Error creating node table ERROR: syntax error at or near ")" (SQLSTATE 42601)
+2026/05/06 10:43:03.502762 db.go:37: [Fatal] Error creating node table ERROR: column "next_node_id" of relation "node" does not exist (SQLSTATE 42703)
+2026/05/06 10:44:19.272402 db.go:37: [Fatal] Error creating node table ERROR: syntax error at or near ")" (SQLSTATE 42601)
+2026/05/06 10:45:04.390630 db.go:37: [Fatal] Error creating node table ERROR: syntax error at or near ")" (SQLSTATE 42601)
+2026/05/06 10:45:16.083264 db.go:37: [Fatal] Error creating node table ERROR: syntax error at or near ")" (SQLSTATE 42601)
+2026/05/06 10:46:06.381985 db.go:37: [Fatal] Error creating node table ERROR: INSERT has more target columns than expressions (SQLSTATE 42601)
+2026/05/06 11:19:42.678360 user.go:45: [Info] User created, id:eb00accc-2ebe-4a10-b163-300d327221cb
+2026/05/06 11:19:42.686796 otp.go:50: [Info] Otp deleted, user_id: eb00accc-2ebe-4a10-b163-300d327221cb
+2026/05/06 11:19:42.688161 otp.go:39: [Info] Otp created, id:f2f56a2b-c21c-4225-92e4-94f28ac4e7d7
+[127.0.0.1]:54141 status:200 - POST reqId: BxFA7JrAIOtE7gkqg3AoqXtSzJzEZOIOZePUxatS2XM, time:   2.1737242s
+2026/05/06 11:23:29.372593 user.go:155: [Info] Returning user email: umarhonsultanov3@gmail.com
+[127.0.0.1]:60803 status:200 - POST reqId: vHaLCbwZ852S55MgAHRW70C05Q1M3Z5L0Ibn3LFhZXA, time:    22.0381ms
+2026/05/06 11:23:48.852651 otp.go:50: [Info] Otp deleted, user_id: eb00accc-2ebe-4a10-b163-300d327221cb
+2026/05/06 11:23:48.853315 user.go:203: [Info] User updated, id: eb00accc-2ebe-4a10-b163-300d327221cb
+2026/05/06 11:23:48.853315 varify_email.go:53: [Info] Admin activated id: eb00accc-2ebe-4a10-b163-300d327221cb
+[127.0.0.1]:60803 status:202 - POST reqId: fAgN4OB3TbyviVULfiOMiYXJ7MeTSTJXiUOOGB9cZxQ, time:       4.09ms
+2026/05/06 12:26:03.155870 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:64078 status:200 - POST reqId: zbmtPyVK4ZMBFv5TaGj5mCNbQq_eB8ZDzXZNgrw6QEI, time:    30.0899ms
+2026/05/06 12:26:47.049358 company.go:53: [Info] Returning all companies
+[127.0.0.1]:64078 status:200 - GET reqId: pL5DLN0u-YLwgfU6lF3_I65K_1VMnY09h8pl5btJTKw, time:     5.0108ms
+[127.0.0.1]:56698 status:404 - POST reqId: qCHAQSjNlvCXapTI6-Lz7jiHJw59xwfzFxawI6i4LjY, time:           0s
+2026/05/06 12:30:33.465600 db.go:43: [Fatal] Error creating business_plan table ERROR: syntax error at or near ")" (SQLSTATE 42601)
+2026/05/06 12:30:55.545690 db.go:46: [Fatal] Error creating task table ERROR: foreign key constraint "task_node_id_fkey" cannot be implemented (SQLSTATE 42804)
+2026/05/06 12:31:45.297654 db.go:46: [Fatal] Error creating task table ERROR: invalid input syntax for type uuid: "1" (SQLSTATE 22P02)
+2026/05/06 12:32:07.533479 db.go:46: [Fatal] Error creating task table ERROR: column "node_id" is of type uuid but default expression is of type integer (SQLSTATE 42804)
+[127.0.0.1]:64600 status:404 - POST reqId: -Jj1DAersw_Y9DTqVvXeOD0kPO8QQ1yFDrfWWztMF6M, time:           0s
+[127.0.0.1]:64600 status:404 - POST reqId: q01gJX9YZauo43mScobCkh_sf_pM4A5MJ2nKoAb1Pgw, time:           0s
+[127.0.0.1]:64600 status:404 - POST reqId: YoMx7paq--XcLJYqlMKiie477IS3fprHIvFIm1gQTyU, time:           0s
+2026/05/06 12:33:23.397575 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:33:23.402140 business_plan.go:38: [Info] businessPlan created, id:6ca9fba2-13e8-43c0-8d1f-e79b8e90614d
+2026/05/06 12:33:23.406776 task.go:39: [Info] Task created, id:f1adf86a-3b97-4b74-a60c-9497961cb5ba
+2026/05/06 12:33:23.406776 business_plan.go:62: [Error] Error creating task_logERROR: column "task_id" of relation "task" does not exist (SQLSTATE 42703)
+[127.0.0.1]:50213 status:500 - POST reqId: j7CElASk7YQ2-lguLzlEldj9Q7c63ftJqu6G6M29lnE, time:    20.0543ms
+2026/05/06 12:36:12.034041 db.go:49: [Fatal] Error creating task_log table ERROR: foreign key constraint "task_log_from_node_id_fkey" cannot be implemented (SQLSTATE 42804)
+2026/05/06 12:37:56.762281 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:37:56.766333 business_plan.go:38: [Info] businessPlan created, id:4d55e2fd-58a3-4673-ab5c-2808f3ebe4dd
+2026/05/06 12:37:56.771951 task.go:39: [Info] Task created, id:28d6b83e-0222-4b49-9cb5-4fdc8a6a4d38
+2026/05/06 12:37:56.773633 business_plan.go:62: [Error] Error creating task_logERROR: invalid input syntax for type integer: "" (SQLSTATE 22P02)
+[127.0.0.1]:64804 status:500 - POST reqId: 0kYvcH-G0HvpbC8WcTnXfLw6_B8oezMk8XBHU1zQ-8c, time:    22.6003ms
+2026/05/06 12:38:58.799888 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:38:58.801915 business_plan.go:38: [Info] businessPlan created, id:b28ee97e-1cd1-42d9-8ba8-e4190ec90b56
+2026/05/06 12:38:58.807188 task.go:39: [Info] Task created, id:15999d12-4aea-49e8-b2e0-189777ab71c4
+2026/05/06 12:38:58.811137 business_plan.go:62: [Error] Error creating task_logERROR: insert or update on table "task_log" violates foreign key constraint "task_log_from_node_id_fkey" (SQLSTATE 23503)
+[127.0.0.1]:63657 status:500 - POST reqId: 1AWnF6L_xolldd2UaVZYl9XQ_oVqdguaAP71qg81hhc, time:    19.4526ms
+2026/05/06 12:42:04.063696 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:42:04.066761 business_plan.go:38: [Info] businessPlan created, id:ff801da9-3d3d-4b29-a7a4-4a0ee0b94652
+2026/05/06 12:42:04.072312 task.go:39: [Info] Task created, id:cdaa4b46-61fc-43bb-b55e-b0c421f467b8
+2026/05/06 12:42:04.072939 business_plan.go:62: [Error] Error creating task_logERROR: invalid input syntax for type integer: "NULL" (SQLSTATE 22P02)
+[127.0.0.1]:55570 status:500 - POST reqId: cVv5x1MzjydFkoQNeIv1Om9AsNcotxu5PRSUMyxmv8c, time:     19.239ms
+2026/05/06 12:42:46.284493 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:42:46.287462 business_plan.go:38: [Info] businessPlan created, id:bbe98714-122a-49d6-b5b1-0239b84b0efd
+2026/05/06 12:42:46.291948 task.go:39: [Info] Task created, id:25c0b145-859b-4096-9b69-49cee291b5d7
+2026/05/06 12:42:46.294028 business_plan.go:62: [Error] Error creating task_logERROR: insert or update on table "task_log" violates foreign key constraint "task_log_from_node_id_fkey" (SQLSTATE 23503)
+[127.0.0.1]:59371 status:500 - POST reqId: fNIE6JlTfopGbV3aiEVDRIOKvp4tIze_VmGo1hOOxd8, time:    19.7407ms
+2026/05/06 12:43:32.126304 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:43:32.128670 business_plan.go:38: [Info] businessPlan created, id:1fb365c3-a89d-4a89-9c98-aa640a77e509
+2026/05/06 12:43:32.134220 task.go:39: [Info] Task created, id:7ac300eb-4aaf-4515-aae3-98d869d36160
+2026/05/06 12:43:32.136531 task_log.go:36: [Info] TaskLog created, id:9e36d1a3-318c-4f95-b007-9d983dd452aa
+2026/05/06 12:43:32.139193 business_plan.go:69: [Error] Error creating billError making bill ERROR: insert or update on table "bill" violates foreign key constraint "bill_user_id_fkey" (SQLSTATE 23503)
+[127.0.0.1]:51347 status:500 - POST reqId: mz9O_1gN7O6e3GRpplDwehMgse8111EBo8qMlg66dtc, time:    20.9728ms
+2026/05/06 12:44:34.391039 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:44:34.394436 business_plan.go:38: [Info] businessPlan created, id:59206e54-f152-48af-ac99-ffa5d5b7ea29
+2026/05/06 12:44:34.399953 task.go:39: [Info] Task created, id:dbd30817-db74-4f36-9ec0-fb14225b9441
+2026/05/06 12:44:34.403161 task_log.go:36: [Info] TaskLog created, id:2e66c0ad-af0b-4461-8ea0-e898c6bfbaf5
+2026/05/06 12:44:34.407664 business_plan.go:70: [Error] Error creating billError making bill ERROR: duplicate key value violates unique constraint "bill_user_id_key" (SQLSTATE 23505)
+[127.0.0.1]:49767 status:500 - POST reqId: DvqQvXOwDbVqi5Xtx-liCkYnrYLOAfo40MRiUutcj_E, time:    25.3741ms
+2026/05/06 12:45:12.400208 company_user.go:32: [Info] company_user created successfully
+2026/05/06 12:45:12.402998 business_plan.go:38: [Info] businessPlan created, id:13f5e27d-c387-4966-9694-11960f5a3ca2
+2026/05/06 12:45:12.405579 task.go:39: [Info] Task created, id:408c759d-1469-4560-894a-cbbab856f080
+2026/05/06 12:45:12.409860 task_log.go:36: [Info] TaskLog created, id:f9d1a075-a1c0-4edd-ac4d-2b98b5730490
+2026/05/06 12:45:12.414184 bill.go:44: [Info] Bill created, invoice:7f9a6a7d-e020-484c-a182-222309a05968
+2026/05/06 12:45:14.333158 business_plan.go:75: [Info] Business plan was submited id: 13f5e27d-c387-4966-9694-11960f5a3ca2
+[127.0.0.1]:65499 status:202 - POST reqId: sZbNi8E53J747FuOpvuJPFT-uJ0y25ciVQFG6rHR2w8, time:   1.9382255s

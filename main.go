@@ -93,7 +93,7 @@ func main() {
 	roleRouter.Delete("/:id",handlers.DeleteRole)
 
 	userRouter:=app.Group("/user")
-	userRouter.Get("/",middlewares.RequireAuth,middlewares.RoleChecker([]string{"user"}), handlers.GetUsers)
+	userRouter.Get("/",middlewares.RequireAuth,middlewares.RoleChecker([]string{"user","admin"}), handlers.GetUsers)
 	userRouter.Get("/:id",handlers.GetOneUser)
 	userRouter.Post("/",handlers.CreateUser)
 	userRouter.Patch("/:id",handlers.PatchUser)
@@ -102,5 +102,10 @@ func main() {
 	app.Post("/login", handlers.LogIn)
 	app.Post("/verify_email",middlewares.RequireAuth, handlers.VarifyEmail)
 	app.Post("/pay",middlewares.RequireAuth, handlers.PayBill)
+	
+	businessRouter:=app.Group("/business")
+	businessRouter.Post("/",middlewares.RequireAuth,middlewares.RoleChecker([]string{"user"}),handlers.UploadBusinessPlan)
+
+	
 	log.Fatal(app.Listen(":" + os.Getenv("PORT")))
 }
