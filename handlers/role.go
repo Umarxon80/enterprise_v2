@@ -3,7 +3,6 @@ package handlers
 import (
 	"enterprise_v2/db"
 	"enterprise_v2/dto"
-	"enterprise_v2/helper"
 
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/log"
@@ -35,7 +34,7 @@ func CreateRole(ctx fiber.Ctx) error {
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err := helper.Validate(role)
+	err := val.Struct(role)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
@@ -59,7 +58,7 @@ func PatchRole(ctx fiber.Ctx) error {
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err := helper.Validate(role)
+	err := val.Struct(role)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})

@@ -4,6 +4,7 @@ import (
 	"enterprise_v2/db"
 	"enterprise_v2/dto"
 	"enterprise_v2/helper"
+	"enterprise_v2/otp"
 
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/log"
@@ -37,7 +38,7 @@ func CreateUser(ctx fiber.Ctx) error {
 	}
 
 	// Validation
-	err := helper.Validate(user)
+	err := val.Struct(user)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
@@ -52,9 +53,13 @@ func CreateUser(ctx fiber.Ctx) error {
 
 
 	id, err := db.CreateUser(user)
+	if err!=nil {
+		log.Errorf("Error creating user %v",err)
+		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
+	}
 
-	if err != nil {
-		log.Errorf("Error creating User, err:", err)
+	if err = otp.MakeAndSendOtp(id, user.Email); err != nil {
+		log.Errorf("Error sending otp %v", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
@@ -71,7 +76,7 @@ func PatchUser(ctx fiber.Ctx) error {
 	}
 
 	// Validation
-	err := helper.Validate(user)
+	err := val.Struct(user)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})

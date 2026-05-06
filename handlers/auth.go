@@ -1,4 +1,4 @@
-package auth
+package handlers
 
 import (
 	"enterprise_v2/db"
@@ -6,7 +6,6 @@ import (
 	"enterprise_v2/helper"
 	"os"
 	"time"
-
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/log"
 	"github.com/golang-jwt/jwt/v5"
@@ -24,7 +23,7 @@ func LogIn(ctx fiber.Ctx) error {
 	}
 
 	// Validation
-	if err:=helper.Validate(auth);err!=nil {
+	if err:=val.Struct(auth);err!=nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}

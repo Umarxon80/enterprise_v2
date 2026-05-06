@@ -3,6 +3,7 @@ package db
 import (
 	"context"
 	"enterprise_v2/dto"
+	"time"
 
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/log"
@@ -158,9 +159,9 @@ func GetOneByEmailUser(email string) (dto.OutputUser, error) {
 func PatchUser(id string, user dto.InputUser) (string, error) {
 	ch, err := DbConnection.Exec(context.Background(), `
 	UPDATE "user"
-	SET  first_name=$1,last_name=$2,email=$3,password=$4
-	WHERE id=$5
-	`, user.FirstName, user.LastName, user.Email, user.Password, id)
+	SET  first_name=$1,last_name=$2,email=$3,password=$4,updated_at=$5
+	WHERE id=$6
+	`, user.FirstName, user.LastName, user.Email, user.Password,time.Now(), id)
 	if err != nil {
 		return "", err
 	}
@@ -184,4 +185,21 @@ func DeleteUser(id string) (string, error) {
 	}
 	log.Info("User deleted, id: ", id)
 	return id, nil
+}
+
+func ActivateUser(id string) ( error) {
+	ch, err := DbConnection.Exec(context.Background(), `
+	UPDATE "user"
+	SET  is_active=$1, updated_at=$2
+	WHERE id=$3
+	`, true,time.Now(),id)
+	if err != nil {
+		return  err
+	}
+	if ch.RowsAffected() < 1 {
+		return  fiber.ErrNotFound
+	}
+
+	log.Info("User updated, id: ", id)
+	return nil
 }

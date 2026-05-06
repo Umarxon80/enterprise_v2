@@ -1,7 +1,6 @@
 package main
 
 import (
-	"enterprise_v2/auth"
 	"enterprise_v2/db"
 	"enterprise_v2/handlers"
 	customLogger "enterprise_v2/logger"
@@ -100,6 +99,8 @@ func main() {
 	userRouter.Patch("/:id",handlers.PatchUser)
 	userRouter.Delete("/:id",handlers.DeleteUser)
 
-	app.Post("/login", auth.LogIn)
+	app.Post("/login", handlers.LogIn)
+	app.Post("/verify_email",middlewares.RequireAuth, handlers.VarifyEmail)
+	app.Post("/pay",middlewares.RequireAuth, handlers.PayBill)
 	log.Fatal(app.Listen(":" + os.Getenv("PORT")))
 }

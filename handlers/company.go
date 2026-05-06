@@ -3,12 +3,12 @@ package handlers
 import (
 	"enterprise_v2/db"
 	"enterprise_v2/dto"
-	"enterprise_v2/helper"
 
+	"github.com/go-playground/validator/v10"
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/log"
 )
-
+var val *validator.Validate = validator.New(validator.WithRequiredStructEnabled())
 func GetCompanies(ctx fiber.Ctx) error {
 	companies, err := db.GetCompanies()
 	if err != nil {
@@ -35,7 +35,7 @@ func CreateCompany(ctx fiber.Ctx) error {
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err := helper.Validate(company)
+	err := val.Struct(company)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
@@ -59,7 +59,7 @@ func PatchCompany(ctx fiber.Ctx) error {
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})
 	}
 
-	err := helper.Validate(company)
+	err := val.Struct(company)
 	if err != nil {
 		log.Error("Wrong input ", err)
 		return ctx.Status(fiber.StatusBadRequest).JSON(fiber.Map{"error": err.Error()})

@@ -232,3 +232,144 @@ Key: 'InputUser.Password' Error:Field validation for 'Password' failed on the 'r
 [127.0.0.1]:51102 status:200 - GET reqId: 0O9ASGDo6CiG-OvgZc-28aVTPay3aZ1ipI7sFxFsQnQ, time:     5.6186ms
 2026/05/05 11:54:44.631414 role_check.go:20: [Error] Not allowev method id: <nil>
 [127.0.0.1]:51565 status:403 - GET reqId: 1kggy2ScT4sPIPRF5fX0_ShQfw66ugsZop33kJvl37c, time:     1.7683ms
+2026/05/05 12:39:17.132739 user.go:79: [Info] Returning all users
+[127.0.0.1]:52950 status:200 - GET reqId: gusgF4IcaCpVoIUAExp7Txqh1C8xnjEyoMUiL9xrDiY, time:    10.3342ms
+2026/05/05 12:39:28.412664 user.go:185: [Info] User deleted, id: ba6438c7-f65e-44e6-abb8-d231aafe32eb
+[127.0.0.1]:52950 status:200 - DELETE reqId: WJhO4hPQgnMmPy30FRxyiKiWYlCgSIoCRjLdT1le7dI, time:     3.8345ms
+2026/05/05 12:39:31.310601 user.go:44: [Info] User created, id:31fd8723-0604-42ed-9ede-69c32e26e681
+2026/05/05 12:39:31.313310 user.go:58: [Error] Error sending otp Error deleting old_otps Not Found
+[127.0.0.1]:52950 status:200 - POST reqId: Lohfgz7erfzcGEWhhEo56mw1mBexRjt0KsoJ5oSktjk, time:    20.9247ms
+2026/05/05 12:42:17.107031 user.go:185: [Info] User deleted, id: 31fd8723-0604-42ed-9ede-69c32e26e681
+[127.0.0.1]:62291 status:200 - DELETE reqId: HHfITjDLhUfiyvk2We9obvg8K1dY3fb-Fi6325pxn94, time:     5.8667ms
+2026/05/05 12:42:19.867058 user.go:44: [Info] User created, id:e25b7ed1-0443-4527-91dd-c7ff6cdb851c
+2026/05/05 12:42:19.871412 otp.go:49: [Info] Otp deleted, user_id: e25b7ed1-0443-4527-91dd-c7ff6cdb851c
+2026/05/05 12:42:19.872470 user.go:58: [Error] Error sending otp Error creating otp ERROR: column "code" of relation "otp" does not exist (SQLSTATE 42703)
+[127.0.0.1]:62291 status:400 - POST reqId: 8sKXnVeXkefux6rvI72bCb5CczTYB_PA0zRrwJ8OgnA, time:    28.6687ms
+2026/05/05 12:43:08.542744 user.go:58: [Error] Error sending otp Error deleting old_otps ERROR: invalid input syntax for type uuid: "" (SQLSTATE 22P02)
+[127.0.0.1]:63907 status:400 - POST reqId: 5FvwWlzV8l3v75rJ8OHadGJ31xv5CalKLtRjGJsBvAg, time:    31.6044ms
+2026/05/05 12:44:33.859053 user.go:58: [Error] Error sending otp Error deleting old_otps ERROR: invalid input syntax for type uuid: "" (SQLSTATE 22P02)
+[127.0.0.1]:51089 status:400 - POST reqId: 9-lXkpoX3cv4sLilA5lnA3qyRy3phU367ToIHBfh1K4, time:    20.5814ms
+2026/05/05 12:44:37.434440 user.go:58: [Error] Error sending otp Error deleting old_otps ERROR: invalid input syntax for type uuid: "" (SQLSTATE 22P02)
+[127.0.0.1]:51089 status:400 - POST reqId: 39xv4lL3DB7y-w36WXo51fnEOgDjOr2toWun6z7-pm8, time:    17.4576ms
+2026/05/05 12:44:42.912978 user.go:58: [Error] Error sending otp Error deleting old_otps ERROR: invalid input syntax for type uuid: "" (SQLSTATE 22P02)
+[127.0.0.1]:51089 status:400 - POST reqId: 2bsfcF_27pdUkCEzDdcsIp_0ceUOsn4BmMlP-r9HwjA, time:    13.5405ms
+2026/05/05 12:45:28.710279 user.go:59: [Error] Error sending otp Error deleting old_otps ERROR: invalid input syntax for type uuid: "" (SQLSTATE 22P02)
+[127.0.0.1]:52734 status:400 - POST reqId: 3KyiU5iZDEHnQv7yTNbCxiGP96mkbi7AZmkTcD2ARII, time:    21.0419ms
+2026/05/05 12:45:59.884321 user.go:185: [Info] User deleted, id: e25b7ed1-0443-4527-91dd-c7ff6cdb851c
+[127.0.0.1]:52734 status:200 - DELETE reqId: zdYd3ap5JmyEQW0T1zXrYF6youIOumO8qWvsjeRAE_w, time:     7.7312ms
+2026/05/05 12:46:04.542646 user.go:44: [Info] User created, id:c3d30502-1987-4d36-882b-caab47191019
+2026/05/05 12:46:04.546924 otp.go:51: [Info] Otp deleted, user_id: c3d30502-1987-4d36-882b-caab47191019
+2026/05/05 12:46:04.548918 user.go:59: [Error] Error sending otp Error creating otp ERROR: null value in column "otp" of relation "otp" violates not-null constraint (SQLSTATE 23502)
+[127.0.0.1]:52734 status:400 - POST reqId: PH1cu4BbOZhMxTCHa4lQFiYtY2WzrKV9mmnJEoPZ3YQ, time:    31.5954ms
+2026/05/05 12:47:02.374965 user.go:185: [Info] User deleted, id: c3d30502-1987-4d36-882b-caab47191019
+[127.0.0.1]:55951 status:200 - DELETE reqId: v2UjhlBltjngslDhx6UhKmXbf9YqCDAzLTCPHBCw_Yg, time:     7.4891ms
+2026/05/05 12:47:05.592937 user.go:44: [Info] User created, id:3750bf4c-9618-4c5a-83da-dfa4a30e9d78
+2026/05/05 12:47:05.596792 otp.go:50: [Info] Otp deleted, user_id: 3750bf4c-9618-4c5a-83da-dfa4a30e9d78
+2026/05/05 12:47:05.598295 user.go:59: [Error] Error sending otp Error creating otp ERROR: null value in column "otp" of relation "otp" violates not-null constraint (SQLSTATE 23502)
+[127.0.0.1]:55951 status:400 - POST reqId: YrxFaqFmghKJtK4lQXO9H9ZwU7-Ff1G-7WGz0Z_MWqM, time:    31.2771ms
+2026/05/05 12:47:23.940953 user.go:59: [Error] Error sending otp Error deleting old_otps ERROR: invalid input syntax for type uuid: "" (SQLSTATE 22P02)
+[127.0.0.1]:56735 status:400 - POST reqId: a8R0gL1XgOckWA5Aycsxu7nLunhPlR26c7k7fT9dMlE, time:     15.608ms
+2026/05/05 12:49:35.556556 user.go:44: [Info] User created, id:deea0e1d-804c-4043-91e1-60da9675dbc4
+2026/05/05 12:49:35.564828 user.go:61: [Error] Error sending otp Error creating otp ERROR: insert or update on table "otp" violates foreign key constraint "otp_user_id_fkey" (SQLSTATE 23503)
+[127.0.0.1]:60928 status:400 - POST reqId: 80glKtTaF5ONR4yvBJcEEL6F12OZ-zBDSKWHyjHM8cY, time:    40.2095ms
+2026/05/05 12:50:50.275232 user.go:58: [Error] Error creating user ERROR: duplicate key value violates unique constraint "user_email_key" (SQLSTATE 23505)
+[127.0.0.1]:63683 status:400 - POST reqId: dXPZFcBKxOcvx5GGzCl7Z0mmdyYq7Qs_dM_f6rWQUIM, time:     24.594ms
+2026/05/05 12:51:56.257240 user.go:44: [Info] User created, id:6d6ee496-2cb3-4c73-a4e3-8a847b57fc34
+2026/05/05 12:51:56.260952 user.go:63: [Error] Error sending otp Error creating otp ERROR: insert or update on table "otp" violates foreign key constraint "otp_user_id_fkey" (SQLSTATE 23503)
+[127.0.0.1]:50686 status:400 - POST reqId: im5g5JBLKMV_myzBHbjJSXybENdQ7s3hHmq0kdumLaQ, time:    17.9241ms
+2026/05/05 12:53:57.268636 db.go:31: [Fatal] Error creating otp table ERROR: syntax error at or near "user" (SQLSTATE 42601)
+2026/05/05 12:54:56.598067 user.go:44: [Info] User created, id:07e2f217-54e4-4fd1-8ce3-8403a15a8f33
+2026/05/05 12:54:56.600666 otp.go:50: [Info] Otp deleted, user_id: 07e2f217-54e4-4fd1-8ce3-8403a15a8f33
+2026/05/05 12:54:56.601880 otp.go:39: [Info] Otp created, id:f64d7d03-8ab8-4e0d-8291-5892113761de
+[127.0.0.1]:61674 status:200 - POST reqId: tGZ9gNEcbgYGyJqanYWATtx-AeAv76XIyQwo61wT458, time:   2.7222204s
+2026/05/05 13:52:23.060999 user.go:58: [Error] Error creating user ERROR: duplicate key value violates unique constraint "user_email_key" (SQLSTATE 23505)
+[127.0.0.1]:58757 status:400 - POST reqId: HraCb3-mrIZyIKnrEwExZnI8xP1NWJKBGpONjire9Vg, time:    17.7504ms
+2026/05/05 13:52:56.450918 user.go:44: [Info] User created, id:386fdb80-1eac-46f7-9435-dccce133c896
+2026/05/05 13:52:56.455561 otp.go:50: [Info] Otp deleted, user_id: 386fdb80-1eac-46f7-9435-dccce133c896
+2026/05/05 13:52:56.456645 otp.go:39: [Info] Otp created, id:d026d279-371e-4337-ba5b-6222fd718b24
+[127.0.0.1]:59855 status:200 - POST reqId: HjGlLS3G6-0ngkqbQZXXmRy9jsqpQtRu0YwQeWSBxX8, time:   3.0434499s
+2026/05/05 13:56:30.824479 user.go:58: [Error] Error creating user ERROR: duplicate key value violates unique constraint "user_email_key" (SQLSTATE 23505)
+[127.0.0.1]:60115 status:400 - POST reqId: zxMSa3Orshwnn7QyJvl-52M-dQSe0AGLN_V-VRltHQg, time:    15.4234ms
+2026/05/05 14:53:31.330794 user.go:154: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:60035 status:200 - POST reqId: 2DXNryfeAZgUQTB6LriivS6hoaRFSISnPoyxewu2vSY, time:    27.2536ms
+2026/05/05 14:56:40.116934 otp.go:65: [Error] Error getting otp, ERROR: relation "otps" does not exist (SQLSTATE 42P01)
+2026/05/05 14:56:40.116934 varify_email.go:21: [Error] Wrong input
+[127.0.0.1]:55344 status:404 - POST reqId: eXkwNg3ZqYCfCf8YX34Y-Qu1kPRKE1VOHTgsQfvk6DI, time:     1.5635ms
+2026/05/05 14:57:00.166498 varify_email.go:21: [Error] Wrong input
+[127.0.0.1]:55978 status:404 - POST reqId: tkA32k1OiBq6k2KdgAUqlt07WJbSNf240fo6JVTuXyc, time:     5.4805ms
+2026/05/05 14:57:04.024531 varify_email.go:21: [Error] Wrong input
+[127.0.0.1]:55978 status:404 - POST reqId: x7UiP64UXwGoVbgmNQsZAAPcxWZLNvjB8KiEi7t65HU, time:     1.2541ms
+2026/05/05 14:57:58.580393 varify_email.go:21: [Error] Wrong input
+[127.0.0.1]:55978 status:404 - POST reqId: VupUb4sB1SzkDYuG6K0LHXUTppn9UkbzZjrtl7DkOy4, time:     1.4058ms
+2026/05/05 14:58:54.692469 user.go:44: [Info] User created, id:4ef3ad31-4810-4b78-a9f7-d1e30607665a
+2026/05/05 14:58:54.694828 otp.go:50: [Info] Otp deleted, user_id: 4ef3ad31-4810-4b78-a9f7-d1e30607665a
+2026/05/05 14:58:54.697357 otp.go:39: [Info] Otp created, id:413ca436-5112-4cf0-a2a8-1d64bd4740f3
+[127.0.0.1]:55012 status:200 - POST reqId: 0ODTzL23bZFqnhnOTz5AE1POtkctiMQ0IxLnie8XHR4, time:   3.4223396s
+2026/05/05 14:59:03.373374 user.go:154: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:55012 status:200 - POST reqId: GnoypSQlYJTAjP86CRH91JyNsR9gwrFvsO-FduCDeFU, time:    22.4857ms
+2026/05/05 14:59:33.404509 otp.go:50: [Info] Otp deleted, user_id: 4ef3ad31-4810-4b78-a9f7-d1e30607665a
+2026/05/05 14:59:33.405016 varify_email.go:33: [Error] Wrong input
+[127.0.0.1]:55012 status:404 - POST reqId: 8DTziSavoGq56IwlpqTtCohmzB2Tcw_-vMOgi-8T5es, time:     3.0532ms
+2026/05/05 15:00:06.130561 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/05 15:00:06.131006 varify_email.go:21: [Error] Wrong input
+[127.0.0.1]:56583 status:404 - POST reqId: 60s3d1deunolHXXR2YVh2HmkZt5VHPdkQ2RqnXyNJog, time:     6.8597ms
+2026/05/05 15:00:30.779616 user.go:57: [Error] Error creating user ERROR: relation "user" does not exist (SQLSTATE 42P01)
+[127.0.0.1]:56583 status:400 - POST reqId: _tMyfkd0Po3eUz_HssHp9_RYnJx0sLt4xRckr8OAAVU, time:    19.2188ms
+2026/05/05 15:00:38.760152 user.go:44: [Info] User created, id:4f03a9c1-2068-472b-8af8-ae9e3ee5e3ff
+2026/05/05 15:00:38.762743 otp.go:50: [Info] Otp deleted, user_id: 4f03a9c1-2068-472b-8af8-ae9e3ee5e3ff
+2026/05/05 15:00:38.764904 otp.go:39: [Info] Otp created, id:eabf5914-3f48-46ce-bab7-ad41f3d10036
+[127.0.0.1]:50921 status:200 - POST reqId: PS6vtPgrs7XyeGXzF2HDByt6pL9oDs5gJK79qMIA1E8, time:   2.4265132s
+2026/05/05 15:01:02.982586 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/05 15:01:02.982586 varify_email.go:21: [Error] Wrong input
+[127.0.0.1]:50921 status:404 - POST reqId: dWSmWunHscANmnV5UJ8PhPY0E39AsahhimJXYcvh_7Y, time:     1.0617ms
+2026/05/05 15:01:05.616044 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/05 15:01:05.616374 varify_email.go:21: [Error] Wrong input
+[127.0.0.1]:50921 status:404 - POST reqId: ryCSIofAQztwIpbGHyEe2aZAmAGNDPrGOj2kdALTQ6U, time:     1.0249ms
+2026/05/05 15:01:13.926119 user.go:154: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:50921 status:200 - POST reqId: oUBH6T9EXVbHhFsfnIAw5Bk2hVAhuZqfxxexof2yqIc, time:      20.28ms
+2026/05/05 15:01:25.817706 otp.go:50: [Info] Otp deleted, user_id: 4f03a9c1-2068-472b-8af8-ae9e3ee5e3ff
+2026/05/05 15:01:25.819149 user.go:202: [Info] User updated, id: 4f03a9c1-2068-472b-8af8-ae9e3ee5e3ff
+2026/05/05 15:01:25.819149 varify_email.go:37: [Info] User activated id: 4f03a9c1-2068-472b-8af8-ae9e3ee5e3ff
+[127.0.0.1]:50921 status:202 - POST reqId: x7T2hMCayuWetKviDzzdjyfVUUIuA7VhhMUr6COEJVg, time:     3.5138ms
+2026/05/05 17:06:39.031783 user.go:45: [Info] User created, id:66d2ec49-eeee-4374-b8bb-0e84eafe3a71
+2026/05/05 17:06:39.036339 otp.go:50: [Info] Otp deleted, user_id: 66d2ec49-eeee-4374-b8bb-0e84eafe3a71
+2026/05/05 17:06:39.036936 otp.go:39: [Info] Otp created, id:a31074d1-3b6e-4e24-b903-1fbb685ae30a
+[127.0.0.1]:54117 status:200 - POST reqId: Na1lv4Mzps1MpIlnYmDZaWfhA2fVXf7zZCWlZbi5744, time:   4.0792189s
+2026/05/05 17:06:54.744886 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:54117 status:200 - POST reqId: 52i8O3Rbk0IMsGEYSm8ZHEpUgdXJQk-Cxmf6A88xOog, time:    16.2118ms
+2026/05/05 17:07:27.034305 otp.go:50: [Info] Otp deleted, user_id: 66d2ec49-eeee-4374-b8bb-0e84eafe3a71
+2026/05/05 17:07:27.035410 user.go:203: [Info] User updated, id: 66d2ec49-eeee-4374-b8bb-0e84eafe3a71
+2026/05/05 17:07:27.035977 varify_email.go:39: [Error] Error making and sending bill err:Error making bill %!w(*error=0xc000288470)
+[127.0.0.1]:54117 status:404 - POST reqId: gvFpUSU1J6TefDOwKJ78EnPqJugDn5PCw2fOfAGAau8, time:     3.8743ms
+2026/05/05 17:11:02.950197 user.go:45: [Info] User created, id:10dd6e69-86ba-43c3-a860-bf78aaafbae3
+2026/05/05 17:11:02.954425 otp.go:50: [Info] Otp deleted, user_id: 10dd6e69-86ba-43c3-a860-bf78aaafbae3
+2026/05/05 17:11:02.955592 otp.go:39: [Info] Otp created, id:9a2030cf-09f0-41b7-8d2a-3dc83cc47e73
+[127.0.0.1]:58225 status:200 - POST reqId: SwS2QAabd-QeyOrQypnug4EyoEkkV6ffz2LgyNZevgI, time:  14.6553466s
+2026/05/05 17:11:26.525719 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:58225 status:200 - POST reqId: LkaNNyu3rjl5-BIJQzf_OMk-pfEJecV4oTWz7uaw81k, time:    20.0725ms
+2026/05/05 17:12:02.853059 otp.go:50: [Info] Otp deleted, user_id: 10dd6e69-86ba-43c3-a860-bf78aaafbae3
+2026/05/05 17:12:02.854196 user.go:203: [Info] User updated, id: 10dd6e69-86ba-43c3-a860-bf78aaafbae3
+2026/05/05 17:12:02.854936 varify_email.go:39: [Error] Error making and sending bill err:Error making bill ERROR: relation "bill" does not exist (SQLSTATE 42P01)
+[127.0.0.1]:58225 status:404 - POST reqId: Vck0598jEgpKxwTe1dpAk40zQq_oMQCimXlP341tBww, time:     5.0599ms
+2026/05/05 17:12:38.651369 db.go:34: [Fatal] Error creating otp table ERROR: syntax error at or near "for" (SQLSTATE 42601)
+2026/05/05 17:13:18.837496 otp.go:65: [Error] Error getting otp, no rows in result set
+2026/05/05 17:13:18.837496 varify_email.go:22: [Error] Wrong input
+[127.0.0.1]:64286 status:404 - POST reqId: URb0tMPZOdSz2T0d916YiGBk3P-Fxe8egL8qBimIXf4, time:     3.8596ms
+2026/05/05 17:14:45.701781 user.go:45: [Info] User created, id:185e77ea-ed97-449f-82e1-262ee533b502
+2026/05/05 17:14:45.705723 otp.go:50: [Info] Otp deleted, user_id: 185e77ea-ed97-449f-82e1-262ee533b502
+2026/05/05 17:14:45.706334 otp.go:39: [Info] Otp created, id:09014362-8985-49fb-a659-e39c52ab9536
+[127.0.0.1]:56191 status:200 - POST reqId: 2Z6yfiQugWV-BdUxR1LT8iWezOq-vozMT--xG9LTnWg, time:   2.5666724s
+2026/05/05 17:14:50.449177 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:56191 status:200 - POST reqId: zDcWu6As5wSrylyDYIZliZ_3f91gkLriLy6WJ4IcDUw, time:     20.238ms
+2026/05/05 17:14:51.598553 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:56191 status:200 - POST reqId: ufmAzBn_iJ7VhyqjrKci0qPk_t5crPvMwvsmCbmch1E, time:    20.8221ms
+2026/05/05 17:14:53.196399 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:56191 status:200 - POST reqId: v2MSqM8UGe60fBc_2GXN6tcg4AwUo4rv-AUG427ytak, time:    16.1238ms
+2026/05/05 17:14:55.156799 user.go:155: [Info] Returning user email: umarhonsultanov53@gmail.com
+[127.0.0.1]:56191 status:200 - POST reqId: a39_Oi30XsrfkiOEPl_V6v-TDijjI-9KlfT8TXy9pGk, time:    18.1157ms
+2026/05/05 17:15:42.690944 otp.go:50: [Info] Otp deleted, user_id: 185e77ea-ed97-449f-82e1-262ee533b502
+2026/05/05 17:15:42.691492 user.go:203: [Info] User updated, id: 185e77ea-ed97-449f-82e1-262ee533b502
+2026/05/05 17:15:42.695967 bill.go:44: [Info] Bill created, invoice:cea3eb88-e901-4862-834f-4074cbfc077f
+2026/05/05 17:15:46.056458 varify_email.go:43: [Info] User activated id: 185e77ea-ed97-449f-82e1-262ee533b502
+[127.0.0.1]:56191 status:202 - POST reqId: zB2Cxw0_TX64XjIHBuLwD8EI32S4FUTOBv5OjbwTGEk, time:   3.3679439s
+[127.0.0.1]:61827 status:200 - POST reqId: WUirCQ97KFqFdfq2qZA-H1FNTI3YKuqL1zRZoQTaVos, time:    10.2881ms

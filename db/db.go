@@ -27,5 +27,11 @@ func Connect() {
 	if err := createUserTable(); err != nil {
 		log.Fatalf("Error creating user table %v", err)
 	}
+	if err := createOtpTable(); err != nil {
+		log.Fatalf("Error creating otp table %v", err)
+	}
+	if err := createBillTable(); err != nil {
+		log.Fatalf("Error creating otp table %v", err)
+	}
 
 }
